@@ -1,0 +1,225 @@
+/* ********** [ FORMS ] ********** */
+
+form { }
+
+	form div.fieldset { }
+
+		form div.fieldset div.legend {
+			margin-bottom: 8px;
+			padding-bottom: 4px;
+			font: bold 12px arial, verdana, sans-serif;
+			color: #436082;
+			border-bottom: 1px solid #d4d4d4; }
+
+
+/* ********** [ FIELDSET ] ********** */
+
+dl.fieldset {
+	width: 100%; }
+
+dl.break {
+	padding-bottom: 8px; }
+
+	dl.fieldset dt {
+		padding-bottom: 6px;
+		clear: left;
+		font: bold 11px arial, verdana, sans-serif;
+		color: #404040; }
+
+		dl.fieldset dt label {
+			font: bold 11px arial, verdana, sans-serif;
+			color: #404040; }
+
+			dl.fieldset dt label a {
+				font: bold 11px arial, verdana, sans-serif;
+				color: #436082;
+				text-decoration: none; }
+
+				dl.fieldset dt label a:hover {
+					text-decoration: underline; }
+
+		dl.fieldset dt i {
+			color: #C40000; }
+
+	dl.fieldset dd {
+		padding-bottom: 6px;
+		font: 11px arial, verdana, sans-serif; }
+
+		dl.fieldset dd a {
+			font: 11px arial, verdana, sans-serif;
+			color: #436082;
+			text-decoration: none; }
+
+			dl.fieldset dd a:hover {
+				text-decoration: underline; }
+
+		dl.fieldset dd.submit {
+			padding: 4px 0px 0px 0px;
+			line-height: normal; }
+
+			dl.fieldset dd.submitjs input.submit {
+				margin-right: 5px;
+				float: left; }
+
+				dl.fieldset dd.submitjs div.progress {
+					height: 21px; }
+
+		dl.fieldset dd.report input.submit {
+			margin-right: 5px;
+			float: left; }
+
+			dl.fieldset dd.report div.progress {
+				float: left;
+				height: 21px; }
+
+		dl.fieldset dd.cancel {
+			float: right; }
+
+			dl.fieldset dd span.wide {
+				margin-left: 120px;
+				display: block;
+				font-size: 10px; }
+
+			dl.fieldset dd span.info {
+				display: block;
+				font-size: 10px; }
+
+			dl.fieldset dd span.true {
+				color: #008000; }
+
+			dl.fieldset dd span.false {
+				color: #D20000; }
+
+	dl.fieldset dd ul.fielditems {
+		list-style: none; }
+
+		dl.fieldset dd ul.fielditems li {
+			padding: 0px;
+			margin: 0px;
+			width: 33%;
+			float: left;
+			font: 11px/16px arial, verdana, sans-serif; }
+
+			dl.fieldset dd ul.fielditems li label { }
+
+	dl.fieldgrid dt {
+		width: 120px;
+		padding: 4px 0px 4px 0px;
+		float: left; }
+
+		dl.fieldgrid dt label { }
+
+			dl.fieldset dt label a { }
+
+	dl.fieldgrid dd {
+		padding: 0px 0px 4px 0px; }
+
+		dl.fieldgrid dd ul.fielditems {
+			margin-left: 120px; }
+
+
+/* ********** [ INPUT ] ********** */
+
+input.text {
+    padding: 4px;
+    font: 11px verdana;
+    color: #000000;
+    border-top: 1px solid #999999;
+    border-left: 1px solid #999999;
+    border-right: 1px solid #C0C0C0;
+    border-bottom: 1px solid #C0C0C0;
+    background: #FFFFFF; }
+
+	input.text:focus {
+	    background: #FFFFF2; }
+
+	input.text_small {
+		width: 579px; }
+
+	input.text_full {
+		width: 686px; }
+
+input.disabled {
+    padding: 4px;
+    font: 11px verdana;
+    color: #ACACAC;
+    border-top: 1px solid #999999;
+    border-left: 1px solid #999999;
+    border-right: 1px solid #C0C0C0;
+    border-bottom: 1px solid #C0C0C0;
+    background: #FFFFFF; }
+
+textarea.textarea {
+    padding: 4px;
+    font: 11px verdana;
+    color: #000000;
+    border-top: 1px solid #999999;
+    border-left: 1px solid #999999;
+    border-right: 1px solid #C0C0C0;
+    border-bottom: 1px solid #C0C0C0;
+    background: #FFFFFF; }
+
+	textarea.textarea:focus {
+	    background-color: #FFFFF2; }
+
+	textarea.textarea_data {
+		width: 566px; }
+
+	textarea.textarea_small {
+		width: 579px;
+		height: 130px; }
+
+	textarea.textarea_full {
+		width: 686px;
+		height: 130px; }
+
+input.checkbox {
+	width: 16px;
+	height: 20px;
+	vertical-align: middle;
+    font: 11px/20px arial, verdana, sans-serif;
+    color: #000000; }
+
+input.radio {
+	width: 13px;
+	height: 18px;
+	vertical-align: middle;
+    font: 11px/18px arial, verdana, sans-serif;
+    color: #000000; }
+
+select.select {
+	margin: 0px;
+	padding: 2px;
+    font: 11px verdana;
+    color: #000000;
+    border-top: 1px solid #999999;
+    border-left: 1px solid #999999;
+    border-right: 1px solid #C0C0C0;
+    border-bottom: 1px solid #C0C0C0;
+    background: #FFFFFF; }
+
+input.submit {
+	margin: 0px;
+	padding: 0px;
+	width: 81px;
+	height: 21px;
+	font: 11px/21px arial;
+	font-weight: bold;
+	color: #474646;
+	text-align: center;
+	border: 0px;
+	background: url("button_hover.gif") no-repeat; }
+
+	input.submit:hover {
+		background: url("button_hover.gif") no-repeat 0px -21px; }
+
+
+/* ********** [ FORM OVERRIDE ] ********** */
+
+input.captcha {
+	float: left;
+	margin-right: 10px;
+	width: 80px; }
+
+img.captcha {
+	float: left; }

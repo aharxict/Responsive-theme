@@ -1,0 +1,42 @@
+/* homepage */
+div.homepage {
+	margin-top: 10px;
+	background: #F7F7F7; }
+
+	div.homepage div.block {
+		text-align: justify;
+		padding: 5px; }
+
+	div.homepage div.welcome {
+		margin: 5px;
+		padding: 8px;
+		border: 1px solid #d4d4d4;
+		background: #ffffff; }
+
+	div.homepage h3 {
+		margin: 0px;
+		padding: 0px 10px;
+		height: 25px;
+		background: #F2E9BC;
+		border: 1px solid #D7CF9E;
+		border-width: 1px 0px;
+		font: bold 11px/25px arial, verdana, sans-serif;
+		color: #000000; }
+
+		div.homepage h3 a {
+			margin-right: 10px;
+			font: bold 11px/25px arial, verdana, sans-serif;
+			color: #000000; }
+
+			div.homepage h3 a.active {
+				color: #004891; }
+
+	div.homepage div.members div.dataitem {
+		margin-left: 3px; }
+
+		div.homepage div.members div.databox div.dataitem {
+			background: #F7F7F7; }
+
+		div.homepage div.members div.image {
+			margin-right: 1px;
+			text-align: center; }

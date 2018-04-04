@@ -1,0 +1,445 @@
+html, body {
+	direction: rtl; }
+
+div#header h1 {
+	padding-left: 0;
+	padding-right: 60px;
+	background-position: 99% center;
+	float: right; }
+
+div#header div.banner {
+	float: left; }
+
+
+div#headernav ul li {
+	float: right; }
+
+	div#headernav ul li a {
+		float: right; }
+
+
+div#usernav li {
+	float: right; }
+
+	div#usernav ul li.nav_profile,
+	div#usernav ul li.nav_messages,
+	div#usernav ul li.nav_messages_new,
+	div#usernav ul li.nav_media,
+	div#usernav ul li.nav_apps,
+	div#usernav ul li.nav_network,
+	div#usernav ul li.nav_settings,
+	div#usernav ul li.nav_logout {
+		background-position: 90% 50%; }
+
+	div#usernav ul li.nav_logout {
+		float: left; }
+
+	div#usernav ul li.nav_notice a.outter {
+		background: url('navigation/pro_notice.png') no-repeat 90% 12px; }
+
+	div#usernav ul li a.outter {
+		padding: 0px 29px 0px 5px;
+		float: right; }
+
+		div#usernav ul li li a {
+			background-position: 98% 50%; }
+
+		div#usernav ul li ul {
+			left: auto;
+			right: -1px; }
+
+			div#usernav ul li ul li a {
+				padding: 0px 26px 0px 0; }
+
+
+#content_wrap {
+	float: right;
+	width: 720px; }
+
+div#sidebar_wrap {
+	padding: 10px 10px 0px 0px;
+	width: 190px;
+	float: right; }
+
+
+div#content div.location_wrap {
+	padding-left: 0;
+	padding-right: 5px; }
+
+	div#content div.location ul li,
+	div#content div.location ul li span,
+	div#content div.location ul li a {
+		float: right; }
+
+	div#content div.location ul li.action {
+		float: left; }
+
+
+div#content div.options ul {
+	border-left: 0;
+	border-right: 1px solid #d4d4d4; }
+
+	div#content div.options ul li,
+	div#content div.options ul li span,
+	div#content div.options ul li a {
+		float: right; }
+
+	div#content div.options ul li {
+		border-width: 1px 0px 0px 1px; }
+
+	div#content div.options ul li.info {
+		padding-left: 0;
+		padding-right: 10px;
+		float: left; }
+
+
+div#content div.suboptions ul li {
+	float: right; }
+
+
+div#content div.footer p {
+	margin: 0px 0px 0px 2px;
+	float: right; }
+
+	div#content div.footer a {
+		margin-right: 0px;
+		margin-left: 2px;
+		float: right; }
+
+
+div#content div.image {
+	padding-right: 0px;
+	padding-left: 5px; }
+
+
+div#content div.entry ul {
+	padding: 10px 20px 10px 0px; }
+
+
+div#content ul.itemheader li {
+	padding-right: 0px;
+	padding-left: 12px;
+	float: right; }
+
+div#content ul.itemfooter li {
+	padding-right: 0px;
+	padding-left: 10px;
+	float: right; }
+
+	div#content ul.itemfooter li.report {
+		padding-right: 10px;
+		padding-left: 0px;
+		float: left; }
+
+
+div#content div.gallerylist span {
+	padding: 0 20px 0 6px;
+	float: right; }
+
+div#content div.galleryitem div.arrows div.progress {
+	margin-left: 5px;
+	margin-right: 0px; }
+
+div#content dl.datainfo dt {
+	padding-right: 0px;
+	padding-left: 5px;
+	float: right; }
+
+	div#content dl.datainfo dd {
+		margin-left: 0px;
+		margin-right: 75px;
+		text-align: right; }
+
+
+div#content div.page_member_profile td.left {
+	padding-right: 0px;
+	padding-left: 5px;
+	border-left: 1px solid #d4d4d4;
+	border-right: 0px; }
+
+	div#content div.page_member_profile div.sidedata {
+		padding: 8px 8px 0px 0px; }
+
+		div#content div.page_member_profile div.sidedata div.image {
+			padding: 0px 0px 8px 8px; }
+
+	div#content div.page_member_profile div.sidepics {
+		padding: 8px 8px 0px 0px; }
+
+		div#content div.page_member_profile div.sidepics div.image {
+			padding: 0px 0px 8px 8px;
+			float: right; }
+
+div#content div.page_member_profile td.right {
+	padding-right: 5px;
+	padding-left: 0px; }
+
+div.actions {
+	padding-right: 5px;
+	padding-left: 0px; }
+
+	div.actions ul.actions li a {
+		padding-right: 24px;
+		padding-left: 0px; }
+
+	div.actions ul.actions li.profile a,
+	div.actions ul.actions li.pictures a,
+	div.actions ul.actions li.thumbnail a,
+	div.actions ul.actions li.edit a,
+	div.actions ul.actions li.remove a,
+	div.actions ul.actions li.primary a,
+	div.actions ul.actions li.comments a,
+	div.actions ul.actions li.approve a,
+	div.actions ul.actions li.join a,
+	div.actions ul.actions li.guests a,
+	div.actions ul.actions li.leave a,
+	div.actions ul.actions li.chat a,
+	div.actions ul.actions li.friends a,
+	div.actions ul.actions li.favorites a,
+	div.actions ul.actions li.wink a,
+	div.actions ul.actions li.message a,
+	div.actions ul.actions li.gift a,
+	div.actions ul.actions li.block a,
+	div.actions ul.actions li.rss a {
+		background-position: 98% 2px; }
+
+
+table.pmbox tr td.sender div.image {
+	float: right; }
+
+	table.pmbox tr td.checkbox {
+		padding-right: 5px;
+		padding-left: 0px; }
+
+
+table.calendar td.eventdays p {
+	margin: 0px 0px 4px 4px; }
+
+	table.calendar td.eventdays a.rotate {
+		float: right; }
+
+		div.eventtooltip {
+			text-align: right; }
+
+	div.eventtooltip span.birthday {
+		background-position: 100% 50%;
+		padding-right: 20px;
+		padding-left: 0px;
+		clear: right; }
+
+
+div.ratingbox div.selection {
+	padding-right: 5px;
+	padding-left: 0px;
+	float: right; }
+
+	div.ratingbox div.selection a {
+		float: right; }
+
+	div.ratingbox div.scores {
+		float: right; }
+
+
+div#content div.reportbox div.popup {
+	right: auto;
+	left: 0px; }
+
+	div#content div.reportbox div.popup div.submit {
+		padding-right: 0px;
+		padding-left: 5px;
+		float: right; }
+
+	div#content div.reportbox div.popup a.cancel {
+		right: auto;
+		left: 10px; }
+
+div.actions div.winkbox {
+	right: auto;
+	left: 0px; }
+
+	div.actions ul.actions li.wink div.winkbox a.cancel {
+		right: auto;
+		left: 10px; }
+
+		div#content div.smiliesbox div.smiliesitem {
+			float: right; }
+
+div.progress {
+	float: right; }
+
+div.htmltooltip {
+	text-align: right; }
+
+
+div#sidebar div.sidebox_wrap div.progress {
+	top: 6px;
+	right: auto;
+	left: 4px; }
+
+	div#sidebar div.sidepics {
+		padding: 8px 8px 0px 0px; }
+
+		div#sidebar div.sidepics div.image {
+			padding: 0px 0px 8px 8px;
+			float: right; }
+
+div#sidebar div.sidebox div.login {
+	background-position: 0 100%; }
+
+	div#sidebar div.sidebox div.login input.text {
+		padding-right: 20px;
+		padding-left: 0px; }
+
+		div#sidebar div.sidebox div.login input.username,
+		div#sidebar div.sidebox div.login input.password {
+			background-position: 98% 50%; }
+
+div#sidebar div.sidebox div.search {
+	background-position: 0 0; }
+
+div#sidebar div.sidebox div.memberslist div.image {
+	float: right;
+	padding: 2px 2px 2px 4px; }
+
+div#sidebar div.sidebox div.polls table td.checkbox {
+	padding-left: 2px;
+	padding-right: 0px; }
+
+
+dl.fieldset dt {
+	clear: right; }
+
+	dl.fieldset dd.submitjs input.submit {
+		margin-right: 0px;
+		margin-left: 5px;
+		float: right; }
+
+	dl.fieldset dd.report input.submit {
+		margin-left: 5px;
+		margin-right: 0px;
+		float: right; }
+
+		dl.fieldset dd.report div.progress {
+			float: right; }
+
+		dl.fieldset dd.cancel {
+			float: left; }
+
+		dl.fieldset dd span.wide {
+			margin-right: 120px;
+			margin-left: 0px; }
+
+	dl.fieldgrid dt {
+		float: right; }
+
+input.captcha {
+	float: right;
+	margin-right: 0px;
+	margin-left: 10px; }
+
+img.captcha {
+	float: right; }
+
+
+#footpanel {
+	right: auto;
+	left: 15px; }
+
+	#footpanel ul li.panel {
+		float: left; }
+
+		#footpanel ul li span.flag {
+			left: 4px;
+			right: auto; }
+
+		#footpanel a.button {
+			float: right; }
+
+		#footpanel a.im,
+		#footpanel a.chat {
+			padding-left: 0px;
+			padding-right: 25px;
+			background-position: 96% 50%; }
+
+		#footpanel a.chat span.online,
+		#footpanel a.chat span.invisible {
+			background-position: 0 50%; }
+
+	#footpanel .subpanel {
+		right: auto;
+		left: 0px; }
+
+		#footpanel .subpanel h3 {
+			padding: 0px 8px 0px 4px; }
+
+			#footpanel .subpanel h3 span {
+				float: left; }
+
+#footpanel #settingspanel .subpanel {
+	left: 0;
+	right: auto; }
+
+	#footpanel #settingspanel .status span {
+		padding-left: 4px;
+		padding-right: 0px;
+		float: right; }
+
+		#footpanel #settingspanel .status a {
+			padding-left: 0px;
+			padding-right: 20px;
+			float: right; }
+
+		#footpanel #settingspanel .status a.online {
+			margin-right: 0px;
+			margin-left: 4px;
+			background-position: 96% 50%; }
+
+		#footpanel #settingspanel .status a.invisible {
+			background-position: 96% 50%; }
+
+		#footpanel #settingspanel .sound {
+			padding: 5px 2px 5px 0px; }
+
+			#footpanel #settingspanel .sound a {
+				padding-right: 22px;
+				padding-left: 0px; }
+
+			#footpanel #settingspanel .sound a.on,
+			#footpanel #settingspanel .sound a.off {
+				background-position: 100% 50%; }
+
+#footpanel #chatpanel .subpanel {
+	left: auto;
+	right: 0; }
+
+	#footpanel #chatpanel .subpanel li {
+		background-position: right center; }
+
+	#footpanel #chatpanel .subpanel li span {
+		float: right; }
+
+		#footpanel #chatpanel .subpanel li a.online,
+		#footpanel #chatpanel .subpanel li a.offline {
+			background-position: 0 50%; }
+
+#footpanel #alertpanel .subpanel {
+	left: auto;
+	right: -142px; }
+
+	#footpanel #alertpanel .subpanel li a.delete {
+		float: left; }
+
+#footpanel .impanel .wrap {
+	padding: 4px 6px 4px 8px; }
+
+	#footpanel .impanel .chatmessages li {
+		direction: rtl; }
+
+	#footpanel .impanel .chatsend input.text {
+		background-position: 98% center;
+		margin-left: 0px;
+		margin-right: 2px;
+		padding-right: 20px;
+		padding-left: 0px; }
+
+

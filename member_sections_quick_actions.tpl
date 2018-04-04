@@ -1,0 +1,1 @@
+<li class="profile"><a href="{top.virtual_path}{member_profile_link}" title="{lang:"core","userinfo_view_profile"}"><span class="glyphicon glyphicon-user" style="padding-right:8px;"></span>{lang:"core","userinfo_view_profile"}</a></li>

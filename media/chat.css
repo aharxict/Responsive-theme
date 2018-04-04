@@ -1,0 +1,91 @@
+/* ********** [ GENERAL ] ********** */
+
+* {
+	margin: 0px;
+	padding: 0px; }
+
+div.clear {
+	clear: both; }
+
+body {
+	margin: 0px; padding: 0px;
+	cursor: default;
+	font: 11px arial, verdana, sans-serif;
+	color: #222222;
+	background: #ffffff; }
+
+
+/* ********** [ CONTAINER ] ********** */
+
+div#container_wrap {
+	margin: 0px;
+	width: 470px;
+	background: #ffffff; }
+
+  	div#container { }
+
+
+/* ********** [ CONTENT ] ********** */
+
+div#content_wrap {
+	width: 470px; }
+
+  	div#content { }
+
+		div#content div.title {
+			padding: 0px 10px;
+			display: block; }
+
+		div#content div.options {
+			float: right; }
+
+
+/* ********** [ CHAT WINDOW ] ********** */
+
+div#chat_messages_box {
+    height: 250px;
+    border-top: 1px solid #999999;
+    border-left: 1px solid #999999;
+    border-right: 1px solid #C0C0C0;
+    border-bottom: 1px solid #C0C0C0;
+    background: #FFFFFF; }
+
+	ul#chat_messages {
+		margin: 4px;
+		padding: 0px;
+		list-style: none; }
+
+		ul#chat_messages li {
+			margin-bottom: 8px;
+			padding: 4px;
+			background: #FFFFFF;
+		    font: 11px/16px arial, verdana, sans-serif;
+			color: #808080; }
+
+			ul#chat_messages li span.name {
+				display: block;
+			    font: 11px arial;
+				font-weight: bold;
+				color: #000000;
+				text-transform: uppercase; }
+
+
+/* ********** [ MESSAGES ] ********** */
+
+div#info_message {
+	margin: 10px;
+	padding: 10px;
+    font: 11px/16px arial, verdana, sans-serif;
+	color: #aa571b;
+    background: #FFFFDF;
+    border-top: 1px #d8b62d solid;
+    border-bottom: 1px #d8b62d solid; }
+
+div#error_message {
+	margin: 10px;
+	padding: 10px;
+    font: 11px/16px arial, verdana, sans-serif;
+	color: #800000;
+    background: #FFEFEF;
+    border-top: 1px #9D290D solid;
+    border-bottom: 1px #9D290D solid; }

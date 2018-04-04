@@ -1,0 +1,333 @@
+/* ********** [ GENERAL ] ********** */
+
+div.clear {
+	clear: both; }
+
+body {
+	cursor: default;
+	font: 11px arial, verdana, sans-serif;
+	color: #222222;
+	background: #0C4D9C url('page_bg.gif'); }
+
+
+/* ********** [ PAGE ] ********** */
+
+div#page_wrap { }
+
+	div#page { }
+
+
+/* ********** [ HEADER ] ********** */
+
+div#header_wrap {
+	height: 80px;
+	background: #ffffff; }
+
+	div#header {
+		margin: 0px auto;
+		width: 940px; }
+
+		div#header h1 {
+			padding-left: 60px;
+			width: 300px;
+			height: 80px;
+			float: left;
+			font: bold 26px/80px Trebuchet MS, arial, sans-serif;
+			color: #D52525;
+			background: url('logo.png') no-repeat 10px center; }
+
+			div#header h1 span { }
+
+			div#header div.banner {
+				padding-top: 10px;
+				float: right; }
+
+
+/* ********** [ CONTAINER ] ********** */
+
+div#container_wrap {
+	margin: 0px auto;
+	width: 950px;
+	background: #4C8FDE; }
+
+  	div#container {
+		margin: 0px auto;
+		width: 940px;
+		background: #ffffff; }
+
+
+/* ********** [ FOOTER ] ********** */
+
+div#footer_wrap {
+	margin: 0px auto;
+	width: 950px;
+	background: #4C8FDE; }
+
+	div#footer {
+		margin: 0px auto;
+		width: 940px;
+		color: #ffffff;
+		background: #4C8FDE;
+		padding: 10px 0px;
+		text-align: center; }
+
+		div#footer a {
+			color: #ffffff; }
+
+
+/* ********** [ CONTENT ] ********** */
+
+#content_wrap {
+	padding: 0px 10px 10px 0px;
+	float: left;
+	width: 720px; }
+
+  	#content { }
+
+
+/* ********** [ SIDEBAR ] ********** */
+
+div#sidebar_wrap {
+	padding: 10px;
+	width: 190px;
+	float: left; }
+
+  	div#sidebar { }
+
+
+/* ********** [ MAIN NAVIGATION ] ********** */
+
+div#headernav_wrap {
+	margin: 0px auto;
+	height: 36px;
+	background: #2274D9; }
+
+	div#headernav {
+		margin: 0px auto;
+		width: 940px;
+		padding-left: 8px; }
+
+		div#headernav ul {
+			height: 36px;
+			list-style: none; }
+
+			div#headernav ul li {
+				float: left; }
+
+				div#headernav ul li a {
+					padding: 0px 8px;
+					height: 36px;
+					display: block;
+					float: left;
+					font: bold 11px/36px arial, verdana, sans-serif;
+					color: #ffffff;
+					text-decoration: none; }
+
+					div#headernav ul li a:hover {
+						background: #619DE6; }
+
+
+/* ********** [ USER NAVIGATION ] ********** */
+
+div#usernav_wrap {
+	margin: 0px auto;
+	width: 950px;
+	background: #4C8FDE; }
+
+	div#usernav {
+		margin: 0px auto;
+		width: 930px;
+		background: #ffffff;
+		padding: 0px 5px;
+		height: 28px;
+		border-bottom: 1px solid #ccc; }
+
+		div#usernav ul {
+			list-style: none; }
+
+			div#usernav li {
+				float: left;
+				height: 28px;
+				z-index: 9999;
+				position: relative; }
+
+				div#usernav ul li a.outter {
+					padding: 0px 5px 0px 29px;
+					height: 28px;
+					display: block;
+					float: left;
+					font: bold 11px/28px arial, sans-serif;
+					color: #436082;
+					text-decoration: none; }
+
+					div#usernav ul li.shover a.outter,
+					div#usernav ul li a.outter:hover {
+						text-decoration: underline; }
+
+					div#usernav ul li li a {
+						background-repeat: no-repeat;
+						background-position: 5px 50%;}
+
+				div#usernav ul li.nav_notice a.outter {
+					background: url('navigation/pro_notice.png') no-repeat 12px 12px; }
+
+				div#usernav ul li.nav_profile {
+					background: url('navigation/pro_profile.png') no-repeat 8px 50%; }
+
+					div#usernav ul li.nav_profile li.home a {
+						background-image: url('navigation/pre_home.png'); }
+
+					div#usernav ul li.nav_profile li.profile a {
+						background-image: url('navigation/pre_profile.png'); }
+
+					div#usernav ul li.nav_profile li.photo a {
+						background-image: url('navigation/pre_photo.png'); }
+
+				div#usernav ul li.nav_messages {
+					background: url('navigation/pro_messages.png') no-repeat 8px 50%; }
+
+					div#usernav ul li.nav_messages_new {
+						background: url('navigation/pro_messages_new.png') no-repeat 8px 50%; }
+
+					div#usernav ul li.nav_messages li.inbox a {
+						background-image: url('navigation/pre_inbox.png'); }
+
+					div#usernav ul li.nav_messages li.sent a {
+						background-image: url('navigation/pre_sent.png'); }
+
+				div#usernav ul li.nav_media {
+					background: url('navigation/pro_media.png') no-repeat 8px 50%; }
+
+					div#usernav ul li.nav_media li.pictures a {
+						background-image: url('navigation/pre_pictures.png'); }
+
+					div#usernav ul li.nav_media li.videos a {
+						background-image: url('navigation/pre_videos.png'); }
+
+					div#usernav ul li.nav_media li.audio a {
+						background-image: url('navigation/pre_audio.png'); }
+
+				div#usernav ul li.nav_apps {
+					background: url('navigation/pro_apps.png') no-repeat 8px 50%; }
+
+					div#usernav ul li.nav_apps li.blog a {
+						background-image: url('navigation/pre_blog.png'); }
+
+					div#usernav ul li.nav_apps li.gifts a {
+						background-image: url('navigation/pre_gifts.png'); }
+
+					div#usernav ul li.nav_apps li.guestbook a {
+						background-image: url('navigation/pre_guestbook.png'); }
+
+					div#usernav ul li.nav_apps li.events a {
+						background-image: url('navigation/pre_events.png'); }
+
+				div#usernav ul li.nav_network {
+					background: url('navigation/pro_network.png') no-repeat 8px 50%; }
+
+					div#usernav ul li.nav_network li.favorites a {
+						background-image: url('navigation/pre_favorites.png'); }
+
+					div#usernav ul li.nav_network li.friends a {
+						background-image: url('navigation/pre_friends.png'); }
+
+					div#usernav ul li.nav_network li.visitors a {
+						background-image: url('navigation/pre_visitors.png'); }
+
+					div#usernav ul li.nav_network li.blocked a {
+						background-image: url('navigation/pre_blocked.png'); }
+
+				div#usernav ul li.nav_settings {
+					background: url('navigation/pro_settings.png') no-repeat 8px 50%; }
+
+					div#usernav ul li.nav_settings li.settings a {
+						background-image: url('navigation/pre_settings.png'); }
+
+					div#usernav ul li.nav_settings li.notifications a {
+						background-image: url('navigation/pre_notifications.png'); }
+
+					div#usernav ul li.nav_settings li.privacy a {
+						background-image: url('navigation/pre_privacy.png'); }
+
+					div#usernav ul li.nav_settings li.upgrade a {
+						background-image: url('navigation/pre_upgrade.png'); }
+
+					div#usernav ul li.nav_settings li.credits a {
+						background-image: url('navigation/pre_credits.png'); }
+
+				div#usernav ul li.nav_logout {
+					float: right;
+					background: url('navigation/pro_logout.png') no-repeat 8px 50%; }
+
+		div#usernav ul li ul {
+			padding: 0px;
+			height: auto;
+			position: absolute;
+			top: -999px;
+			left: -1px;
+			/*display: none;*/
+			list-style: none;
+			background: #ffffff;
+			border: 1px solid #cccccc;
+			border-width: 0px 1px 1px 1px; }
+
+		div#usernav ul li:hover ul,
+		div#usernav ul li.shover ul {
+			top: 28px;
+			left: 0px;
+			width: 135px; }
+
+			div#usernav ul li ul li {
+				height: 24px;
+				float: none; }
+
+				div#usernav ul li ul li a {
+					padding: 0px 0px 0px 26px;
+					height: 24px;
+					display: block;
+					float: none;
+					font: 11px/24px verdana, arial, sans-serif;
+					color: #436082;
+					border: 0px;
+					text-decoration: none;
+                    white-space: nowrap; }
+
+					div#usernav ul li ul li a:hover {
+						border: 0px;
+						background-color: #f2f2f2;
+						color: #419CDE; }
+
+
+/* ********** [ COMMON ITEMS ] ********** */
+
+h2, h3, h4, h5, h6 {
+	padding-bottom: 5px;
+	font: bold 14px/16px arial, verdana, sans-serif;
+	color: #436082; }
+
+	h2 {
+		margin-bottom: 5px;
+		font: bold 14px/16px arial, verdana, sans-serif;
+		border-bottom: 1px solid #d4d4d4; }
+
+	h3 {
+		font: bold 13px/16px arial, verdana, sans-serif; }
+
+	h4 {
+		font: bold 12px/16px arial, verdana, sans-serif; }
+
+	h4 {
+		font: bold 11px/16px arial, verdana, sans-serif; }
+
+p {
+	margin: 0px 0px 8px 0px;
+	font: 11px/16px arial, verdana, sans-serif;
+	color: #222222; }
+
+	a {
+		font: 11px arial, verdana, sans-serif;
+		color: #436082;
+		text-decoration: none; }
+
+		a:hover {
+			text-decoration: underline; }

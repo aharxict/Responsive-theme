@@ -1,0 +1,128 @@
+div#sidebar div.sidebox input.text {
+	width: 160px; }
+
+div#sidebar div.sidebox select.select {
+	max-width: 170px; }
+
+/* side box */
+div#sidebar div.sidebox_wrap {
+	margin-bottom: 10px;
+	border: 1px solid #d4d4d4;
+	border-width: 0px 1px 1px 1px; }
+
+	div#sidebar div.sidebox_header {
+		position: relative; }
+
+	div#sidebar div.sidebox_wrap h5 {
+		padding: 5px 8px;
+		margin: 0px;
+		color: #222222;
+		overflow: hidden;
+		min-height: 15px;
+		border-top: 1px solid #94afc4;
+		font: bold 11px/14px arial, verdana, sans-serif;
+		background: #ecf0f5; }
+
+		div#sidebar div.sidebox_wrap h5 a {
+			color: #222222;
+			font: bold 11px/14px arial, verdana, sans-serif;
+			text-decoration: none; }
+
+			div#sidebar div.sidebox_wrap h5 a:hover {
+				text-decoration: underline; }
+
+		div#sidebar div.sidebox_wrap div.progress {
+			top: 6px;
+			right: 4px;
+			position: absolute; }
+
+	div#sidebar div.sidebox {
+		padding: 8px; }
+
+	div#sidebar div.sidepics {
+		padding: 8px 0px 0px 8px; }
+
+		div#sidebar div.sidepics div.image {
+			padding: 0px 8px 8px 0px;
+			float: left; }
+
+			div#sidebar div.sidepics div.image a img {
+				width: 50px;
+				border: 1px solid #222222; }
+
+				div#sidebar div.sidepics div.image a:hover img {
+					border: 1px solid #436082; }
+
+
+/* login box */
+div#sidebar div.sidebox div.login {
+	background: url('qlogin_bg.gif') no-repeat 100% 100%; }
+
+	div#sidebar div.sidebox div.login input.text {
+		padding-left: 20px;
+		width: 146px; }
+
+		div#sidebar div.sidebox div.login input.username {
+			background: #ffffff url('qlogin_username.png') no-repeat 2px 50%; }
+
+		div#sidebar div.sidebox div.login input.password {
+			background: #ffffff url('qlogin_password.png') no-repeat 2px 50%; }
+
+	div#sidebar div.sidebox div.login dt {
+		font-weight: normal;
+		padding-bottom: 3px; }
+
+		div#sidebar div.sidebox div.login dt label {
+			font-weight: normal; }
+
+	div#sidebar div.sidebox div.login dd.submit {
+		padding-top: 0px; }
+
+	div#sidebar div.sidebox div.login div.lostpass {
+		padding-top: 4px; }
+
+
+/* search box */
+div#sidebar div.sidebox div.search {
+	background: url('qsearch_bg.gif') no-repeat 100% 0px; }
+
+
+/* member list box */
+div#sidebar div.sidebox div.memberslist { }
+
+	div#sidebar div.sidebox div.memberslist div.image {
+		float: left;
+		padding: 2px 4px 2px 2px; }
+
+		div#sidebar div.sidebox div.memberslist div.image img {
+			background: #ffffff;
+			padding: 2px;
+			border: 1px solid #95C2EF;
+			width: 45px; }
+
+			div#sidebar div.sidebox div.memberslist div.image img:hover {
+				border: 1px solid #898989; }
+
+
+/* alerts box */
+div#sidebar div.sidebox div.alerts table.plain {
+	width: 100%; }
+
+div#sidebar div.sidebox div.alerts table.plain td {
+	padding-bottom: 2px; }
+
+
+/* poll box */
+div#sidebar div.sidebox div.polls table td {
+	vertical-align: middle; }
+
+	div#sidebar div.sidebox div.polls table td.checkbox {
+		padding-right: 2px; }
+
+	div#sidebar div.sidebox div.polls div.results_bar {
+		height: 8px;
+		border: 1px solid #555555;
+		font: 10px arial;
+		color: #ffffff;
+		background: #d70500 url('poll_bar_bg.gif') repeat-x; }
+
