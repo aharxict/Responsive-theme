@@ -22,7 +22,7 @@ include_once SYS_PATH . "includes/ext/core/ext.lang.php";
 include_once SYS_PATH . "includes/ext/core/ext.ifelse.php";
 include_once SYS_PATH . "includes/ext/core/ext.break.php";
 include_once SYS_PATH . "includes/ext/ext.activities.php";
- ?><?php $_temp_inc = $TEMPLATE->output('header.tpl',0); include($_temp_inc); ?>
+ ?>﻿<?php $_temp_inc = $TEMPLATE->output('header.tpl',0); include($_temp_inc); ?>
 
 <div class="section section-header">
 <div class="container">
@@ -112,7 +112,11 @@ include_once SYS_PATH . "includes/ext/ext.activities.php";
 		<div class="typepage">
 
 			<div class="dataitem single" style="margin-bottom:20px; border: 1px #eee solid; padding:20px 13px 13px 13px; border-radius: 3px 3px 3px 3px;">
-            <p>Welcome, <a href="<?php echo isset($_stack[0]['virtual_path']) ? $_stack[0]['virtual_path'] : "&#123;virtual_path&#125;"; ?><?php echo isset($_obj['member_profile_link']) ? $_obj['member_profile_link'] : "&#123;member_profile_link&#125;"; ?>"><?php echo isset($SESSION->conf['username']) ? $SESSION->conf['username'] : "&#123;username&#125;"; ?></a>! Below is a quick overview of your tasks and events.</p>
+				<div class="alert alert-success fade in" style="margin-top:10px;">
+					<a href="#" class="close" data-dismiss="alert">×</a>
+					<p>Hallo, <a href="<?php echo isset($_stack[0]['virtual_path']) ? $_stack[0]['virtual_path'] : "&#123;virtual_path&#125;"; ?><?php echo isset($_obj['member_profile_link']) ? $_obj['member_profile_link'] : "&#123;member_profile_link&#125;"; ?>"><?php echo isset($SESSION->conf['username']) ? $SESSION->conf['username'] : "&#123;username&#125;"; ?></a>! hier ein Ueberblick deiner Events </p>
+				</div>
+
 				<table class="plain" style="width:100%;">
 					<tr style="width:100%;">
 						<td class="data" style="width:50%" valign="top">
@@ -192,11 +196,11 @@ include_once SYS_PATH . "includes/ext/ext.activities.php";
 				</table>
 			</div>
 
-			<!--
-			<div class="dataitem single">
+
+			<div class="dataitem single subfield" style="margin-bottom:20px; border: 1px #eee solid; padding:13px 13px 13px 13px; border-radius: 3px 3px 3px 3px;">
 				<div class="suboptions_wrap">
 					<div class="suboptions">
-						<ul>
+						<ul class="nav nav-ul">
 							<?php if (!empty($_obj['profile_groups'])){ if (!is_array($_obj['profile_groups'])) $_obj['profile_groups']=array(array('profile_groups'=>$_obj['profile_groups'])); $_tmp_arr_keys=array_keys($_obj['profile_groups']); if ($_tmp_arr_keys[0]!='0') $_obj['profile_groups']=array(0=>$_obj['profile_groups']); $_stack[$_stack_cnt++]=$_obj; $_cnt['profile_groups']=count($_obj['profile_groups']); foreach ($_obj['profile_groups'] as $rowcnt=>$profile_groups) { $profile_groups['rowcnt']=$rowcnt; $profile_groups['rowpos']=$rowcnt+1; $profile_groups['rownum']=$rowcnt%2+1; $profile_groups['rowtotal']=$_cnt['profile_groups']; $profile_groups['rowfirst']=$rowcnt==0?1:0; $profile_groups['rowlast']=($rowcnt+1)==$_cnt['profile_groups']?1:0; $_obj=&$profile_groups; ?>
 								<?php if ( $this->objval($_obj,'group_label')  != "general") { ?>
 									<li><a href="javascript:void(0)" id="profile_data_<?php echo isset($_obj['rowcnt']) ? $_obj['rowcnt'] : "&#123;rowcnt&#125;"; ?>_tab" onclick="switch_tabs('profile_data', <?php echo isset($_obj['rowcnt']) ? $_obj['rowcnt'] : "&#123;rowcnt&#125;"; ?>)"><?php echo isset($_obj['group_name']) ? $_obj['group_name'] : "&#123;group_name&#125;"; ?></a></li>
@@ -232,7 +236,7 @@ include_once SYS_PATH . "includes/ext/ext.activities.php";
 					<?php } ?>
 				<?php } $_obj=$_stack[--$_stack_cnt];} ?>
 			</div>
-			-->
+
 
 			<div style="margin-bottom:20px; border: 1px #eee solid; padding:13px 13px 13px 13px; border-radius: 3px 3px 3px 3px;">
             <?php echo vldext_activities(array('member_id'=>$_obj['member_id'],'timeframe'=>"45",'limit'=>"30")); ?>

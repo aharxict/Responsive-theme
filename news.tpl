@@ -24,7 +24,7 @@
                            </div>
                         <!-- INCLUDE message.tpl -->   
         
-
+<div class="content-box">
 <div class="outter page_news">
 
 		<div class="typecontent">
@@ -61,7 +61,7 @@
 		<div class="clear"></div>
 
 	</div>
-
+</div>
 	<!-- IF total_pages > "1" -->
 		<div class="footer_wrap">
 			<div class="footer">

@@ -55,7 +55,7 @@
                         <!-- INCLUDE message.tpl -->   
         
 <!-- IF hide_content != "1" -->
-
+<div class="content-box">
 	<div class="outter page_account_friends_requests">
 <style type="text/css">
 .dataitem {    
@@ -169,7 +169,7 @@ position: relative;
 		<div class="clear"></div>
 
 	</div>
-
+</div>
 <!-- ENDIF -->
 		</div>
 		<div class="clear"></div>

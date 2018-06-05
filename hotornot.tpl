@@ -22,15 +22,17 @@
 
                                 <div class="clearfix"></div>
                            </div>
-<!-- INCLUDE message.tpl -->   
-<a href="javascript:void(0)" onclick="showhide_field('field_filters')"><span class="glyphicon glyphicon-search" style="padding-right:4px;"></span> {lang:"hotornot","filters"}</a>
-        
+<div class="content-box">
+<!-- INCLUDE message.tpl -->
+	<div class="btn-box text-center" style="margin-bottom: 5px;">
+	<a class="btn" href="javascript:void(0)" onclick="showhide_field('field_filters')"><span class="glyphicon glyphicon-search" style="padding-right:4px;"></span> {lang:"hotornot","filters"}</a>
+	</div>
 
 	<div class="outter page_hotornot">
 
 		<div class="typemedia">
 			<div class="dataitem single" id="field_filters" <!-- IF hide_content != "1" -->style="display: none"<!-- ENDIF -->>
-				<div class="form" style="margin-top:7px;">
+				<div class="form content-box" style="margin-top:7px;">
 					<form name="hotornot" action="" method="post">
 
 						<!-- IF total_types > "1" -->
@@ -125,7 +127,7 @@
 									<dt><label for="field_adult">{lang:"hotornot","show_adult"}</label></dt>
 									<dd><select id="field_adult" class="select form-control" name="adult" style="width:auto;">{dropdownlist:yesnobox,picture_adult}</select></dd>
 								<!-- ENDIF -->
-    							<dd class="submit"><input class="submit btn" name="submit" value="{lang:"hotornot","submit"}" type="submit" /></dd>
+    							<dd class="submit btn-box"><input class="submit btn" name="submit" value="{lang:"hotornot","submit"}" type="submit" /></dd>
 							</dl>
 							<div class="clear"></div>
 						</div>
@@ -133,7 +135,7 @@
 					</form>
 				</div>
 			</div>
-
+</div>
 			<!-- IF hide_content != "1" -->
 
 				<div class="dataitem single galleryitem dataitemlast">

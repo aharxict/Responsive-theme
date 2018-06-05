@@ -44,7 +44,7 @@
                                 </div>
                                 <div class="clearfix"></div>
                            </div>
-                           
+                           <div class="content-box">
             			<span>{messages_info}</span>
                         
                         <!-- INCLUDE message.tpl -->
@@ -95,7 +95,7 @@
 
 		</form>
 							</div>
-                           
+						   </div>
                            
                            	</div>
 							

@@ -23,7 +23,7 @@
 <h2>{lang:"core","login_header"}</h2>
 </div>
 
-<form method="post" name="login" action="{virtual_path}{ifelse:settings.fancy_urls,"1","account/login/","index.php?m=account_login"}">
+<form method="post" name="login" class="login-sidebar" action="{virtual_path}{ifelse:settings.fancy_urls,"1","account/login/","index.php?m=account_login"}">
 <div class="fieldset">
 <dl class="fieldset">
 <dt><label for="loginbox_username">{lang:"core","login_username"}</label></dt>
@@ -31,7 +31,7 @@
 <dt><label for="loginbox_password">{lang:"core","login_password"}</label></dt>
 <dd><input id="loginbox_password" maxlength="32" size="10" type="password" name="password" value="" class="text password form-control" /></dd>
 <dt><div style="line-height:26px;"><input type="checkbox" name="nonxpcookie" value="1" class="checkbox" id="loginbox_nonxpcookie" style="float:left; margin-right:7px;" /> <label for="loginbox_nonxpcookie" style="float:left;">{lang:"core","login_remember_me"}</label></div><div class="clearfix"></div></dt>
-<dd class="submit"><input type="submit" name="login" value="{lang:"core","login_submit"}" class="submit btn" /></dd>
+<dd class="submit btn-box"><input type="submit" name="login" value="{lang:"core","login_submit"}" class="submit btn" /></dd>
 </dl>
 </div>
 <input type="hidden" name="islogin" value="1" />

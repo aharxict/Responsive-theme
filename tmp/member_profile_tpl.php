@@ -49,34 +49,34 @@ include_once SYS_PATH . "includes/ext/ext.pictures.php";
 						</div>
                         
                         
-                        <div style="box-shadow: 1px 1px 5px 0 #ced4e0;">
-                        <ul class="list-group" style="margin-top: 10px; margin-bottom:5px !important;">
+                        <div style="box-shadow: 0px 0px 0px 0 #ced4e0;">
+                        <ul class="list-group gradient-box" style="margin-top: 10px; margin-bottom:5px !important;">
                         
                         <?php if ( @$PREFS->conf['enable_friends']  &&  $this->objval($_obj,'member_is_friend')  == "0") { ?>
-						<li class="list-group-item" style="border-left:none !important; border-right:none !important; border-top:none !important; border-bottom: 1px dotted #ddd; margin-bottom:0;">
+						<li class="list-group-item" style="border-left:none !important; border-right:none !important; border-top:none !important; border-bottom: 0px dotted #ddd; margin-bottom:0;">
                         <a href="<?php echo isset($_obj['virtual_path']) ? $_obj['virtual_path'] : "&#123;virtual_path&#125;"; ?><?php echo isset($_obj['member_add_friends_link']) ? $_obj['member_add_friends_link'] : "&#123;member_add_friends_link&#125;"; ?>" title="<?php echo vldext_lang("member","friends"); ?>"><span class="glyphicon glyphicon-user" style="width:20px;"></span> <?php echo vldext_lang("member","add_friends"); ?></a>
                         </li>
 						<?php } ?>
                         
                         <?php if ( @$PREFS->conf['enable_favorites']  &&  $this->objval($_obj,'member_is_self_favorite')  == "0") { ?>
-						<li class="list-group-item" style="border-left:none !important; border-right:none !important; border-top:none !important; border-bottom: 1px dotted #ddd; margin-bottom:0;">
+						<li class="list-group-item" style="border-left:none !important; border-right:none !important; border-top:none !important; border-bottom: 0px dotted #ddd; margin-bottom:0;">
                         <a href="<?php echo isset($_obj['virtual_path']) ? $_obj['virtual_path'] : "&#123;virtual_path&#125;"; ?><?php echo isset($_obj['member_add_favorites_link']) ? $_obj['member_add_favorites_link'] : "&#123;member_add_favorites_link&#125;"; ?>" title="<?php echo vldext_lang("member","add_favorites"); ?>"><span class="glyphicon glyphicon-star" style="width:20px;"></span> <?php echo vldext_lang("member","add_favorites"); ?></a>
                         </li>
 						<?php } ?>
                         
                         <?php if ( @$PREFS->conf['enable_messaging'] ) { ?>
-                        <li class="list-group-item" style="border-left:none !important; border-right:none !important; border-top:none !important; border-bottom: 1px dotted #ddd; margin-bottom:0;">
+                        <li class="list-group-item" style="border-left:none !important; border-right:none !important; border-top:none !important; border-bottom: 0px dotted #ddd; margin-bottom:0;">
                         <a title="<?php echo vldext_lang("member","send_message"); ?>" href="<?php echo isset($_obj['virtual_path']) ? $_obj['virtual_path'] : "&#123;virtual_path&#125;"; ?><?php echo isset($_obj['member_send_message_link']) ? $_obj['member_send_message_link'] : "&#123;member_send_message_link&#125;"; ?>"> <span class="glyphicon glyphicon-comment" style="width:20px;"></span> <?php echo vldext_lang("member","send_message"); ?></a>
                         </li>
                         <?php } ?>
                         
                         <?php if ( @$PREFS->conf['enable_gifts'] ) { ?>
-						<li class="list-group-item" style="border-left:none !important; border-right:none !important; border-top:none !important; border-bottom: 1px dotted #ddd; margin-bottom:0;">
+						<li class="list-group-item" style="border-left:none !important; border-right:none !important; border-top:none !important; border-bottom: 0px dotted #ddd; margin-bottom:0;">
                         <a href="<?php echo isset($_obj['virtual_path']) ? $_obj['virtual_path'] : "&#123;virtual_path&#125;"; ?><?php echo isset($_obj['member_send_gift_link']) ? $_obj['member_send_gift_link'] : "&#123;member_send_gift_link&#125;"; ?>" title="<?php echo vldext_lang("member","send_gift"); ?>"><span class="glyphicon glyphicon-gift" style="width:20px;"></span> <?php echo vldext_lang("member","send_gift"); ?></a></li>
 						<?php } ?>
                         
                         <?php if ( @$PREFS->conf['quick_messages'] ) { ?>
-						<li class="list-group-item wink" style="border-left:none !important; border-right:none !important; border-top:none !important; border-bottom: 1px dotted #ddd; margin-bottom:0;">
+						<li class="list-group-item wink" style="border-left:none !important; border-right:none !important; border-top:none !important; border-bottom: 0px dotted #ddd; margin-bottom:0;">
 							<a href="#" title="<?php echo vldext_lang("member","send_wink"); ?>" onclick="showhide_field('send_wink_box');return false;"><span class="glyphicon glyphicon-eye-open" style="width:20px;"></span> <?php echo vldext_lang("member","send_wink"); ?></a>
 								<div id="send_wink_box" class="winkbox" style="display: none">
 									<select class="select form-control" id="quick_messages" name="quick_messages">
@@ -145,7 +145,7 @@ include_once SYS_PATH . "includes/ext/ext.pictures.php";
 
 							<?php if (!empty($_obj['profile_groups'])){ if (!is_array($_obj['profile_groups'])) $_obj['profile_groups']=array(array('profile_groups'=>$_obj['profile_groups'])); $_tmp_arr_keys=array_keys($_obj['profile_groups']); if ($_tmp_arr_keys[0]!='0') $_obj['profile_groups']=array(0=>$_obj['profile_groups']); $_stack[$_stack_cnt++]=$_obj; $_cnt['profile_groups']=count($_obj['profile_groups']); foreach ($_obj['profile_groups'] as $rowcnt=>$profile_groups) { $profile_groups['rowcnt']=$rowcnt; $profile_groups['rowpos']=$rowcnt+1; $profile_groups['rownum']=$rowcnt%2+1; $profile_groups['rowtotal']=$_cnt['profile_groups']; $profile_groups['rowfirst']=$rowcnt==0?1:0; $profile_groups['rowlast']=($rowcnt+1)==$_cnt['profile_groups']?1:0; $_obj=&$profile_groups; ?>
 								<div class="datainfo profile">
-									<dl class="datainfo" style="border:#eee solid 1px; padding:13px 13px 13px 13px; border-radius: 3px 3px 3px 3px; margin-top:-1px; margin-bottom:15px;">
+									<dl class="datainfo" style="padding:13px 13px 13px 13px; border-radius: 3px 3px 3px 3px; margin-top:-1px; margin-bottom:15px;">
                                     <h3 style="font-size:18px;"><?php echo isset($_obj['group_name']) ? $_obj['group_name'] : "&#123;group_name&#125;"; ?></h3>
 										<?php if (!empty($_obj['profile_fields'])){ if (!is_array($_obj['profile_fields'])) $_obj['profile_fields']=array(array('profile_fields'=>$_obj['profile_fields'])); $_tmp_arr_keys=array_keys($_obj['profile_fields']); if ($_tmp_arr_keys[0]!='0') $_obj['profile_fields']=array(0=>$_obj['profile_fields']); $_stack[$_stack_cnt++]=$_obj; $_cnt['profile_fields']=count($_obj['profile_fields']); foreach ($_obj['profile_fields'] as $rowcnt=>$profile_fields) { $profile_fields['rowcnt']=$rowcnt; $profile_fields['rowpos']=$rowcnt+1; $profile_fields['rownum']=$rowcnt%2+1; $profile_fields['rowtotal']=$_cnt['profile_fields']; $profile_fields['rowfirst']=$rowcnt==0?1:0; $profile_fields['rowlast']=($rowcnt+1)==$_cnt['profile_fields']?1:0; $_obj=&$profile_fields; ?>
 											<dt style="float:left;"><?php echo isset($_obj['field_name']) ? $_obj['field_name'] : "&#123;field_name&#125;"; ?>:</dt>

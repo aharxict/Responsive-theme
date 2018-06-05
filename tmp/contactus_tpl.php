@@ -19,7 +19,7 @@ http://www.vldpersonals.com/agreement/
 */
 
 include_once SYS_PATH . "includes/ext/core/ext.lang.php";
- ?><?php $_temp_inc = $TEMPLATE->output('header.tpl',0); include($_temp_inc); ?>
+ ?>﻿<?php $_temp_inc = $TEMPLATE->output('header.tpl',0); include($_temp_inc); ?>
 
 <div class="section section-header">
 <div class="container">
@@ -56,19 +56,19 @@ include_once SYS_PATH . "includes/ext/core/ext.lang.php";
 					<form name="edit" method="post" action="">
 						<div class="fieldset">
 							<dl class="fieldset">
-								<dt><label for="field_from"><?php echo vldext_lang("contactus","email"); ?></label></dt>
+								<dt><label for="field_from"><?php echo vldext_lang("Kontaktiere uns","email"); ?></label></dt>
 								<dd><input type="text" class="text form-control" size="40" id="field_from" name="from" value="<?php echo isset($_obj['from']) ? $_obj['from'] : "&#123;from&#125;"; ?>" /></dd>
-								<dt><label for="field_subject"><?php echo vldext_lang("contactus","subject"); ?></label></dt>
+								<dt><label for="field_subject"><?php echo vldext_lang("Kontaktiere uns","subject"); ?></label></dt>
 								<dd>
 									<select name="subject" class="select form-control">
-										<option value="Förslag">Förslag</option>
-                                        <option value="Annonsera">Annonsera</option>
-                                        <option value="Rapportera missbruk">Rapportera missbruk</option>
-                                        <option value="Tekniska problem">Tekniska problem</option>
-                                        <option value="Annan fråga">Annan fråga</option>
+										<option value="Vorschlag">Vorschlag</option>
+                                        <option value="Werbung">Werbung</option>
+                                        <option value="Missbrauch melden">Missbrauch melden</option>
+                                        <option value="Technische Probleme">Technische Probleme</option>
+                                        <option value="Andere Frage">Andere Frage</option>
                                     </select>
 								</dd>
-								<dt><label for="field_body"><?php echo vldext_lang("contactus","message"); ?></label></dt>
+								<dt><label for="field_body"><?php echo vldext_lang("Kontaktiere uns","message"); ?></label></dt>
 								<dd><textarea class="textarea textarea_full form-control" id="field_body" name="body" rows="5" cols="40"><?php echo isset($_obj['body']) ? $_obj['body'] : "&#123;body&#125;"; ?></textarea></dd>
 								<?php if ( @$PREFS->conf['feedback_captcha'] ) { ?>
 									<dt><label for="field_captcha"><?php echo vldext_lang("contactus","verify_number"); ?></label></dt>

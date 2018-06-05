@@ -1,4 +1,4 @@
-<!-- INCLUDE header.tpl -->
+﻿<!-- INCLUDE header.tpl -->
 
 <div class="section section-header">
 <div class="container">
@@ -90,7 +90,7 @@
 			<div class="dataitem single" style="margin-bottom:20px; border: 1px #eee solid; padding:20px 13px 13px 13px; border-radius: 3px 3px 3px 3px;">
 				<div class="alert alert-success fade in" style="margin-top:10px;">
 					<a href="#" class="close" data-dismiss="alert">×</a>
-					<p>Welcome, <a href="{top.virtual_path}{member_profile_link}">{session.username}</a>! Below is a quick overview of your tasks and events.</p>
+					<p>Hallo, <a href="{top.virtual_path}{member_profile_link}">{session.username}</a>! hier ein Ueberblick deiner Events </p>
 				</div>
 
 				<table class="plain" style="width:100%;">
@@ -193,6 +193,7 @@
 						<div class="datainfo profile" id="profile_data_{rowcnt}_content" style="display: none">
 							<dl class="datainfo">
 								<!-- BEGIN profile_fields -->
+									<div class="data-row">
 									<dt>{field_name}:</dt>
 									<dd>
 										<!-- IF field_value -->
@@ -205,6 +206,7 @@
 											{lang:"core","user_field_none"}
 										<!-- ENDIF -->
 									</dd>
+									</div>
 								<!-- END profile_fields -->
 							</dl>
 						</div>

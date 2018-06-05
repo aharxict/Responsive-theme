@@ -92,7 +92,7 @@
 
 					<div class="suboptions_wrap">
 						<div class="suboptions">
-							<ul class="nav nav-tabs  nav-append-content" style="border-bottom: 1px solid #3abeb1;">
+							<ul class="nav nav-tabs  nav-append-content" style="border-bottom: 0px solid #3abeb1;">
 								<!-- BEGIN profile_groups -->
 									<li><a href="javascript:void(0)" id="profile_data_{rowcnt}_tab" onclick="switch_tabs('profile_data', {rowcnt}, 0, 1);$('#current_profile_section').val({rowcnt});">{group_name}</a></li>
 								<!-- END profile_groups -->
@@ -102,7 +102,7 @@
 					</div>
 					<div class="clear"></div>
 
-					<div class="form" style="border: 1px #3abeb1 solid; padding:20px 13px 13px 13px; border-radius: 3px 3px 3px 3px; margin-top:-1px;">
+					<div class="form" style="padding:20px 13px 13px 13px; border-radius: 3px 3px 3px 3px; margin-top:-1px;">
 						<!-- BEGIN profile_groups -->
 							<div class="fieldset " id="profile_data_{rowcnt}_content" style="display: none;">
 								<dl class="fieldset fieldgrid break">
@@ -125,7 +125,7 @@
 											<!-- ELSEIF field_type = "checkbox" -->
 	                                                <ul class="fielditems" style="margin-bottom:10px;">
 													<!-- INBEGIN field_items -->
-														<li style="list-style-type: none; padding: 0px; margin: 0px; width: 33%; float: left;"><label class="checkbox" style="font-weight:400; line-height:26px;">{checkboxes:parent.field_label,rowcnt,parent.field_value,inner_key}&nbsp;{inner_value}</label></li>
+														<li style="list-style-type: none; padding: 0px; margin: 0px; width: 33%; float: left;"><label class="checkbox" style="font-weight:400; line-height:26px;">{checkboxes:parent.field_label,rowcnt,parent.field_value,inner_key}&nbsp;<div class="checkbox__text">{inner_value}</div></label></li>
 													<!-- END field_items -->
 												<div class="clearfix"></div></ul>
 											<!-- ELSEIF field_type = "radio" -->
@@ -136,7 +136,7 @@
 												</ul>
 												<div class="clear"></div>
 											<!-- ELSEIF field_type = "combo" -->
-												<select class="select form-control" style="margin-bottom:10px;" id="field_{field_label}" name="{field_label}">
+												<select class="select form-control custom-select" style="margin-bottom:10px;" id="field_{field_label}" name="{field_label}">
 													<!-- IF field_label != "gender1" AND field_label != "gender2" -->
 														<option value="">{lang:"core","user_field_none"}</option>
 													<!-- ENDIF -->

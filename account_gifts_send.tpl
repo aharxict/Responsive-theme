@@ -56,16 +56,17 @@
                         <!-- INCLUDE message.tpl -->   
         
 <!-- IF hide_content != "1" -->
-
+<div class="content-box btn-box">
 	<div class="outter page_account_gifts_compose">
+
 <style type="text/css">
-.dataitem {    
-	background: transparent url('{virtual_path}templates/{session.template}/media/border.png') repeat-x scroll left bottom;
+.dataitem {
+	/*background: transparent url('{virtual_path}templates/{session.template}/media/border.png') repeat-x scroll left bottom; */
     padding-bottom:15px;
     margin-bottom: 15px;
 }
 ul.actions li {
-	background: transparent url('{virtual_path}templates/{session.template}/media/border.png') repeat-x scroll left bottom;
+	/*background: transparent url('{virtual_path}templates/{session.template}/media/border.png') repeat-x scroll left bottom;*/
 	padding-bottom:3px;
 	padding-top:3px;
 	min-width:125px;
@@ -130,14 +131,14 @@ position: relative;
 </style>
 <style type="text/css">
 .gifts {    
-	background: transparent url('{virtual_path}templates/{session.template}/media/border.png') repeat-x scroll left bottom;
+	/*background: transparent url('{virtual_path}templates/{session.template}/media/border.png') repeat-x scroll left bottom; */
     padding-bottom:15px;
     margin-bottom: 15px;
 }
 </style>
 		<div class="typepage">
 			<div class="dataitem single">
-            <div><p>Välj en gåva nedan som du vill skicka till <!-- INCLUDE member_sections_name.tpl -->. Det kostar 1 kredit att skicka en gåva. Du kan köpa flera krediter genom att <a href="{virtual_path}index.php?m=account_upgrade">klicka här</a>. Du har förnärvarande {session.totalcredits} krediter.</p></div>
+            <div style="display: none;"><p>Välj en gåva nedan som du vill skicka till <!-- INCLUDE member_sections_name.tpl -->. Det kostar 1 kredit att skicka en gåva. Du kan köpa flera krediter genom att <a href="{virtual_path}index.php?m=account_upgrade">klicka här</a>. Du har förnärvarande {session.totalcredits} krediter.</p></div>
 				<table class="plain">
 					<tr>
 		                <td class="data">
@@ -200,7 +201,7 @@ position: relative;
 		<div class="clear"></div>
 
 	</div>
-
+</div>
 	<script type="text/javascript" language="javascript">
 	var smilies = [{smilies_str}];
 	</script>

@@ -46,6 +46,7 @@
                                 </div>
                                 <div class="clearfix"></div>
                            </div>
+							<div class="content-box message-box">
                         <!-- INCLUDE message.tpl -->   
             			<span>{messages_info}</span>
         
@@ -124,8 +125,8 @@
         
 
 							</div>
-                           
-                           
+
+							</div>
                            	</div>
 							
 						</div>

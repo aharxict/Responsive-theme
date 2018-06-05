@@ -55,7 +55,7 @@
                         <!-- INCLUDE message.tpl -->   
         
 <!-- IF hide_content != "1" -->
-
+<div class="content-box">
 	<div class="outter page_account_friends">
 <style type="text/css">
 .dataitem {    
@@ -166,7 +166,7 @@ position: relative;
 		<div class="clear"></div>
 
 	</div>
-
+</div>
 	<!-- IF total_pages > "1" -->
 		<div class="footer_wrap">
 			<div class="footer">

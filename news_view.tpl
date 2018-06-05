@@ -26,7 +26,7 @@
         
 
 <!-- IF hide_content != "1" -->
-
+<div class="content-box">
 	<div class="outter page_news_view">
 
 		<div class="typepage">
@@ -100,7 +100,7 @@
 		</div>
 		<div class="clear"></div>
 	</div>
-
+</div>
 <!-- ENDIF -->
 
 	<!-- IF total_pages > "1" -->

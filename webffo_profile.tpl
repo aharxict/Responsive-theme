@@ -17,7 +17,7 @@
     </div>
             
     <a href="{top.virtual_path}{member_profile_link}" class="vt_username"> 
-        <span class="visible-xs">{trim:member_username,8}</span>
+        <span class="visible-xs">{trim:member_username,12}</span>
         <span class="hidden-xs">{trim:member_username,12}</span>
         <!-- IF profile_field_country_name OR profile_field_city_name -->
         <!-- ENDIF -->
@@ -28,7 +28,7 @@
         <a class=" btn btn-link"  href="{top.virtual_path}{ifelse:settings.fancy_urls,"1","account/messages/compose/","index.php?m=account_messages&p=compose&id="}{member_id}" onclick="return showConversations({member_id})"><span class="glyphicon glyphicon-envelope"></span></a>
       
         
-        <a class="btn btn-link" href="{top.virtual_path}{ifelse:settings.fancy_urls,"1","account/favorites/add/","index.php?m=m=account_favorites&p=add&id="}{member_id}"><span class="glyphicon glyphicon-heart"></span></a>
+        <a class="btn btn-link" href="{top.virtual_path}{ifelse:settings.fancy_urls,"1","account/favorites/add/","index.php?m=m=account_favorites&p=add&id="}{member_id}"><span class="glyphicon glyphicon-thumbs-up"></span></a>
         <!-- IF session.can_delete_own_friends AND top.active_module == "account_friends" -->
         <a class="btn btn-link" href="#" onclick="javascript:confirmLink('{lang:"friends","delete?"}', '{top.virtual_path}{member_delete_link}')" title="{lang:"friends","delete"}"><span class="glyphicon glyphicon-remove"></span></a></li>
         <!-- ENDIF -->

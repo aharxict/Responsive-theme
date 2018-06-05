@@ -26,7 +26,7 @@
                            </div>
                         <!-- INCLUDE message.tpl -->   
         
-
+<div class="content-box">
 <div class="outter page_member_pictures">
 
 	<div class="typemedia">
@@ -92,6 +92,7 @@
 	</div>
 	<div class="clear"></div>
 
+</div>
 </div>
 <style type="text/css">
 div.page_numbers {

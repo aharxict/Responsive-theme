@@ -32,7 +32,7 @@
 <!-- INCLUDE message.tpl -->        
 
 <!-- IF hide_content != "1" -->
-
+<div class="content-box">
 	<div class="outter page_search">
 
 		<div class="typepage">
@@ -41,7 +41,7 @@
 					<form name="search" method="post" action="">
 						<!-- IF event_fields -->
 							<div class="fieldset">
-								<div class="legend">{lang:"events","event_fields"}</div>
+								<div class="legend"><h3>{lang:"events","event_fields"}</h3></div>
 								<dl class="fieldset fieldgrid break">
 
 									<!-- IF settings.enable_event_name_search -->
@@ -111,7 +111,7 @@
 						<!-- ENDIF -->
 
 						<div class="fieldset">
-							<div class="legend">{lang:"events","options"}</div>
+							<div class="legend"><h3>{lang:"events","options"}</h3></div>
 							<dl class="fieldset fieldgrid">
 								<dt><label for="field_with_guests">{lang:"events","with_guests_events"}</label></dt>
 								<dd><select class="select form-control" name="with_guests" id="field_with_guests">{dropdownlist:yesnobox,"0"}</select></dd>
@@ -132,7 +132,7 @@
 		<div class="clear"></div>
 
 	</div>
-
+</div>
 <!-- ENDIF -->
 
 							</div><div class="clearfix"></div>

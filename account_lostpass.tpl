@@ -37,7 +37,7 @@
 								<dd style="margin-bottom:10px;"><input maxlength="32" size="30" type="text" id="field_username" name="username" value="{username}" class="text form-control" /></dd>
 								<dt><label for="field_email">{lang:"forgotpassword","email"}</label></dt>
 								<dd style="margin-bottom:20px;"><input type="text" size="30" class="text form-control" name="email" id="field_email" value="{email}" maxlength="64" /></dd>
-    							<dd class="submit"><input class="submit btn" name="submit" value="{lang:"forgotpassword","submit"}" type="submit" /></dd>
+    							<dd class="submit btn-box"><input class="submit btn" name="submit" value="{lang:"forgotpassword","submit"}" type="submit" /></dd>
 							</dl>
 							<div class="clear"></div>
 						</div>

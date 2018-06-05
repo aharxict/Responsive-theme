@@ -59,16 +59,16 @@
                         <!-- INCLUDE message.tpl -->
         
 <!-- IF hide_content != "1" -->
-
+<div class="content-box">
 	<div class="outter page_account_friends">
 <style type="text/css">
 .dataitem {    
-	background: transparent url('{virtual_path}templates/{session.template}/media/border.png') repeat-x scroll left bottom;
+	/*background: transparent url('{virtual_path}templates/{session.template}/media/border.png') repeat-x scroll left bottom;*/
     padding-bottom:10px;
     margin-bottom: 15px;
 }
 ul.actions li {
-	background: transparent url('{virtual_path}templates/{session.template}/media/border.png') repeat-x scroll left bottom;
+	/*background: transparent url('{virtual_path}templates/{session.template}/media/border.png') repeat-x scroll left bottom;*/
 	padding-bottom:3px;
 	padding-top:3px;
 	min-width:125px;
@@ -172,7 +172,7 @@ position: relative;
 		<div class="clear"></div>
 
 	</div>
-
+</div>
 	<!-- IF total_pages > "1" -->
 		<div class="footer_wrap">
 			<div class="footer">

@@ -52,8 +52,8 @@
                            </div>
                         <!-- INCLUDE message.tpl -->   
         
-
-<p>Select when you want to get a message to your email address.
+	<div class="content-box">
+<h3>Wählen Sie, wenn Sie eine Nachricht an Ihre E-Mail-Adresse erhalten möchten.</h3>
 	<div class="outter page_account_notifications">
 
 		<form name="edit" method="post" action="">
@@ -64,13 +64,13 @@
 							<dl class="fieldset">
 								<!-- BEGIN settings -->
 									<dt>
-									<label for="field_{setting_label}">
+									<label class="checkbox" for="field_{setting_label}" style="margin-bottom: 15px;">
 									<input style="float:left;" type="checkbox" class="checkbox" name="{setting_label}" value="1" id="field_{setting_label}" <!-- IF setting_value -->checked="checked"<!-- ENDIF --> />
-											<div style="float:left; padding-left:10px; padding-top:3px;">{setting_name}</div>
+										<div class="checkbox__text"><div style="float:left; padding-left:10px; padding-top:3px;">{setting_name}</div></div>
 										</label>
 									</dt>
 								<!-- END settings -->
-    							<dd class="submit" style="margin-top:10px;"><input class="submit btn" type="submit" name="submit" value="{lang:"notifications","submit"}" /></dd>
+    							<dd class="submit btn-box" style="margin-top:10px;"><input class="submit btn" type="submit" name="submit" value="{lang:"notifications","submit"}" /></dd>
 							</dl>
 						</div>
 						<input type="hidden" name="issettings" value="1" />
@@ -81,7 +81,7 @@
 		</form>
 
 	</div>
-                           
+	</div>
                            
                            	</div>
 							

@@ -57,12 +57,16 @@ include_once SYS_PATH . "includes/ext/ext.anchor.php";
 						<div class="fieldset">
 							<dl class="fieldset fieldgrid">
 								<dt><label for="field_username"><?php echo vldext_lang("login","username"); ?></label></dt>
-								<dd style="padding-bottom:10px;"><input maxlength="64" size="30" type="text" id="field_username" name="username" value="" class="text form-control" /></dd>
+								<dd class="icon-field user-field" style="padding-bottom:10px;"><input maxlength="64" size="30" type="text" id="field_username" name="username" value="" class="text form-control" placeholder="<?php echo vldext_lang("login","username"); ?>" /></dd>
 								<dt><label for="field_password"><?php echo vldext_lang("login","password"); ?></label></dt>
-								<dd style="padding-bottom:10px;"><input maxlength="32" size="30" type="password" id="field_password" name="password" value="" class="text form-control" /></dd>
-								<dt><label for="field_nonxpcookie"><?php echo vldext_lang("login","remember_me"); ?></label></dt>
+								<dd class="icon-field password-field" style="padding-bottom:10px;"><input maxlength="32" size="30" type="password" id="field_password" name="password" value="" class="text form-control" placeholder="<?php echo vldext_lang("login","password"); ?>" /></dd>
+								<dt><label class="remember" for="field_nonxpcookie"><?php echo vldext_lang("login","remember_me"); ?></label></dt>
 								<dd style="padding-bottom:20px;"><select class="select form-control" name="nonxpcookie" id="field_nonxpcookie"><?php echo vldext_dropdownlist($_obj['yesnobox'],0); ?></select></dd>
-    							<dd class="submit"><input type="submit" name="submit" value="<?php echo vldext_lang("login","submit"); ?>" class="submit btn" /></dd>
+									<dd class="submit">
+										<div style="display:none;" id="login_back" class="btn-default btn pull-left">Zurück</div>
+										<input type="submit" name="submit" value="<?php echo vldext_lang("login","submit"); ?>" class="submit btn" />
+									</dd>
+
 							</dl>
 							<div class="clear"></div>
 						</div>

@@ -53,7 +53,7 @@
         
 
 <!-- IF hide_content != "1" -->
-
+<div class="content-box">
 	<div class="outter page_account_upgrade">
 
 		<div class="typemembers">
@@ -70,7 +70,7 @@
 		<div class="clear"></div>
 
 	</div>
-
+</div>
 <!-- ENDIF -->                           
                            
                            	</div>

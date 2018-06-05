@@ -51,6 +51,7 @@
                                 <div class="clearfix"></div>
                            </div>
                         <!-- INCLUDE message.tpl -->
+				<div class="content-box">
                         <span>{pictures_info}</span>
 
 	<div class="outter page_account_pictures_edit" style="margin-top:15px;">
@@ -131,7 +132,7 @@
 		<div class="clear"></div>
 
 	</div>
-
+				</div>
 	<!-- IF picture_preview == "" AND settings.enable_flash_uploader -->
 		<script type="text/javascript" language="javascript">
 			$(document).ready(function(){

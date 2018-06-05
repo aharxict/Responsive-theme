@@ -86,7 +86,7 @@
 													</label>
 												</dt>
 											<!-- ENDIF -->
-    										<dd class="submit">
+    										<dd class="submit btn-box">
     											<input class="submit btn" type="submit" name="submit" value="{lang:"photo","submit"}" />
     										</dd>
 										</dl>

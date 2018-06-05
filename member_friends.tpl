@@ -1,7 +1,25 @@
 <!-- INCLUDE header.tpl -->
 
-<div class="header_wrap">
-	<div class="location_wrap">
+<div class="section section-header">
+	<div class="container">
+		<div class="row">
+
+			<!-- IF loggedin -->
+			<!-- INCLUDE user-menu.tpl -->
+			<!-- ENDIF -->
+
+			<div class="section" style="padding-top:10px;">
+				<div class="container">
+					<div class="row">
+						<!-- INCLUDE login_form_sidebar.tpl -->
+
+						<div class="col-sm-8">
+							<div class="blog-post blog-single-post page-content">
+
+
+
+							<div class="header_wrap single-post-title">
+	<div class="location_wrap" style="display: none;">
 		<div class="location">
 			<ul>
 				<li><!-- INCLUDE member_sections_location.tpl --></li>
@@ -12,10 +30,10 @@
 		</div>
 	</div>
 	<div class="options_wrap">
-		<div class="title">
-			<h1>{lang:"member","app_friends"}</h1>
+		<div class="title" style="float: left;">
+			<h2>{lang:"member","app_friends"}</h2>
 		</div>
-		<div class="options">
+		<div class="options text-right" >
 			<!-- INCLUDE member_sections_links.tpl -->
 			<div class="clear"></div>
 		</div>
@@ -27,7 +45,7 @@
 <!-- INCLUDE message.tpl -->
 
 <!-- IF hide_content != "1" -->
-
+<div class="content-box">
 	<div class="outter page_member_friends">
 
 		<div class="typemembers">
@@ -36,7 +54,7 @@
 					<table class="plain">
 						<tr>
 							<td>
-								<div class="image">
+								<div class="image" style="margin-right: 10px;">
 									<!-- INCLUDE member_sections_picture.tpl -->
 								</div>
 							</td>
@@ -49,7 +67,7 @@
 								</div>
 							</td>
 							<td>
-								<div class="actions">
+								<div class="actions" style="display: none;">
 									<ul class="actions">
 										<!-- INCLUDE member_sections_quick_actions.tpl -->
 									</ul>
@@ -63,7 +81,7 @@
 		<div class="clear"></div>
 
 	</div>
-
+</div>
 	<!-- IF total_pages > "1" -->
 		<div class="footer_wrap">
 			<div class="footer">
@@ -81,5 +99,11 @@
 	<!-- ENDIF -->
 
 <!-- ENDIF -->
+						</div>
+						</div>
+
+					</div>
+				</div>
+			</div>    </div></div></div>
 
 <!-- INCLUDE footer.tpl -->

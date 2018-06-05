@@ -10,13 +10,13 @@
        <!-- ENDIF -->
 
            <div class="col-xs-12 col-sm-6 col-md-3">
-          <div class="col-xs-12">
+          <div class="col-xs-12" style="display: none;">
               <div class="entry_image image_overlay_actions">
                   <!-- IF entry_picture -->
                   <a class="blog_entry_link" href="{top.virtual_path}{entry_link}">
                       <img src="{top.virtual_pic_path}{member_media_path}{entry_picture}" class="img-full img-responsive" alt="" border="0" /></a>
                   <!-- ELSEIF member_picture AND member_picture_active -->
-                 
+
                   <a class="blog_entry_link" href="{top.virtual_path}{entry_link}">
                       <img class="img-full img-responsive" src="{vldthemes:a="thumbnail",path=member_media_path,filename=member_picture}" alt="" border="0" />
                   </a>
@@ -24,16 +24,16 @@
                   <a class="blog_entry_link" href="{top.virtual_path}{entry_link}">
                       <img  class="img-full img-responsive" src="{top.virtual_tpl_path}{session.template}/media/content_picture_none.gif" alt="" border="0" />
                   </a>
-                  <!-- ENDIF -->                                                         
-              </div> 
+                  <!-- ENDIF -->
+              </div>
           </div>
 
           <div class="col-xs-12">
               <h4 class="blog-title"><a class="nowrap " href="{top.virtual_path}{entry_link}">{trim:entry_title,40}</a></h4>
-              <div class="text-justify">
+              <div class="text-center">
                   {trim:entry_body,150}
               </div>
-              <div class="date"><i class="fa fa-calendar-o"></i> {entry_date}</div>
+              <div class="date" style="display: none;"><i class="fa fa-calendar-o"></i> {entry_date}</div>
               <div class="link">
                   <a href="{top.virtual_path}{entry_link}">{lang:"core","home_read_more"}</a>
               </div>

@@ -8,7 +8,7 @@
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 		</button>
-		<a href="#" class="navbar-brand2">Menu</a>
+		<div href="#" class="navbar-brand2">Menu</div>
 	</div>
 
 	<!-- Collection of nav links, forms, and other content for toggling -->

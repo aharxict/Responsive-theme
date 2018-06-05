@@ -15,8 +15,8 @@
 
 <!-- SEARCH RESULTS -->
 					<div class="col-sm-8" style="margin-bottom:7px; padding-right:10px;">
-						<div class="blog-post blog-single-post page-content" style="padding:15px 5px; padding-bottom:0;">
-							<div class="single-post-title" style="border-bottom: 2px dotted #CCC; margin-left:11px; margin-right:11px;">
+						<div class="blog-post blog-single-post page-content" style="padding:0px 0px; padding-bottom:0;">
+							<div class="single-post-title" style="border-bottom: 2px dotted #CCC; margin-left:0px; margin-right:0px;">
 							<div style="float:left;"><h2><!-- IF active_module == "advanced_search" -->{lang:"search","app_advanced_search"}<!-- ELSE -->{lang:"search","app_search"}<!-- ENDIF --></h2></div>
                                 
                                 <div style="float:right;">
@@ -104,7 +104,7 @@
 														<!-- ELSEIF field_type = "checkbox" -->
 															<ul class="fielditems" style="margin-bottom:10px;">
 																<!-- INBEGIN field_items -->
-																	<li style="list-style-type: none; padding: 0px; margin: 0px; width: 33%; float: left;"><label class="checkbox" style="font-weight:400; line-height:26px;">{checkboxes:parent.field_label,rowcnt,"",inner_key}&nbsp;{inner_value}</label></li>
+                                                                <li style="list-style-type: none; padding: 0px; margin: 0px; width: 33%; float: left;"><label class="checkbox" style="font-weight:400; line-height:26px;">{checkboxes:parent.field_label,rowcnt,"",inner_key}&nbsp;<div class="checkbox__text">{inner_value}</div></label></li>
 																<!-- END field_items -->
 															<div class="clearfix"></div></ul>
 															<div class="clear"></div>
@@ -112,14 +112,14 @@
 															<!-- IF field_in_search_multi -->
 																<ul class="fielditems" style="margin-bottom:10px;">
 																	<!-- INBEGIN field_items -->
-																		<li style="list-style-type: none; padding: 0px; margin: 0px; width: 33%; float: left;"><label class="checkbox" style="font-weight:400; line-height:26px;">{checkboxes:parent.field_label,rowcnt,"",inner_key}&nbsp;{inner_value}</label></li>
+                                                                    <li style="list-style-type: none; padding: 0px; margin: 0px; width: 33%; float: left;"><label class="checkbox" style="font-weight:400; line-height:26px;">{checkboxes:parent.field_label,rowcnt,"",inner_key}&nbsp;<div class="checkbox__text">{inner_value}</div></label></li>
 																	<!-- END field_items -->
 																<div class="clearfix"></div></ul>
 																<div class="clear"></div>
 															<!-- ELSE -->
 																<ul class="fielditems" style="margin-bottom:10px;">
 																	<!-- INBEGIN field_items -->
-																		<li style="list-style-type: none; padding: 0px; margin: 0px; width: 33%; float: left;"><label class="checkbox" style="font-weight:400; line-height:26px;">{radiobuttons:parent.field_label,rowcnt,"",inner_key}&nbsp;{inner_value}</label></li>
+                                                                    <li style="list-style-type: none; padding: 0px; margin: 0px; width: 33%; float: left;"><label class="checkbox" style="font-weight:400; line-height:26px;">{radiobuttons:parent.field_label,rowcnt,"",inner_key}&nbsp;<div class="checkbox__text">{inner_value}</div></label></li>
 																	<!-- END field_items -->
 																<div class="clearfix"></div></ul>
 																<div class="clear"></div>
@@ -128,7 +128,7 @@
 															<!-- IF field_in_search_multi -->
 																<ul class="fielditems" style="margin-bottom:10px;">
 																	<!-- INBEGIN field_items -->
-																		<li style="list-style-type: none; padding: 0px; margin: 0px; width: 33%; float: left;"><label class="checkbox" style="font-weight:400; line-height:26px;">{checkboxes:parent.field_label,rowcnt,"",inner_key}&nbsp;{inner_value}</label></li>
+                                                                    <li style="list-style-type: none; padding: 0px; margin: 0px; width: 33%; float: left;"><label class="checkbox" style="font-weight:400; line-height:26px;">{checkboxes:parent.field_label,rowcnt,"",inner_key}&nbsp;<div class="checkbox__text">{inner_value}</div></label></li>
 																	<!-- END field_items -->
 																<div class="clearfix"></div></ul>
 																<div class="clear"></div>
@@ -151,8 +151,10 @@
 																</select>
 															<!-- ENDIF -->
 														<!-- ELSEIF field_type = "birthday" -->
+                                                        <div class="ages_box">
 															<select class="select form-control" style="width:46%; display:inline-block;" id="field_{field_label}" name="{field_label}_from">{dropdownlist:top.agebox,field_value}</select> -
 															<select class="select form-control" style="width:46%; display:inline-block;" id="field_{field_label}_to" name="{field_label}_to">{dropdownlist:top.agebox,field_default}</select>
+                                                        </div>
 														<!-- ENDIF -->
 													</dd>
 
@@ -324,8 +326,10 @@
 																</select>
 															<!-- ENDIF -->
 														<!-- ELSEIF field_type = "birthday" -->
+                                                            <div class="ages_box">
 															<select class="select form-control" style="width:46%; display:inline-block;" id="field_{field_label}" name="{field_label}_from">{dropdownlist:top.agebox,field_value}</select> -
 															<select class="select form-control" style="width:46%; display:inline-block;" id="field_{field_label}_to" name="{field_label}_to">{dropdownlist:top.agebox,field_default}</select>
+                                                            </div>
 														<!-- ENDIF -->
 													</dd>
 

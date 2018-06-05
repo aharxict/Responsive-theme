@@ -261,8 +261,11 @@
                                 </div>
                             </div>
 
+                            <div class="button-row">
+                                <button onclick="return openSecondRegTab()" style="display:block" id="reg_second" class="btn btn-success ">Registrieren</button>
+                                <div onclick="return openLoginTab()" style="display:block" id="login_tab" class="btn btn-success ">Anmelden</div>
+                            </div>
 
-                            <button onclick="return openSecondRegTab()" style="display:block" id="reg_second" class="btn btn-success ">{vldthemes:a="lang",key="register_nextstep"}</button>
                     </div>
                     <div id="vt_reg_tab2">
 
@@ -378,10 +381,11 @@
 
 
                         <input type="hidden" name="isregister" value="1" />
-                        <button onclick="return openFirstRegTab()" style="display:block" id="reg_back" class="btn-default btn pull-left">Back</button>
-                        <input id="reg_submit" class="btn-primary btn pull-right" name="submit" value="{lang:"register","submit"}" type="submit" />
+                        <button onclick="return openFirstRegTab()" style="display:block" id="reg_back" class="btn-default btn pull-left">Zurück</button>
+                        <button id="reg_submit" class="btn-primary btn pull-right" name="submit" value="{lang:"register","submit"}" type="submit">{lang:"register","submit"}</button>
 
                     </div>
+
 
 
                     <script type="text/javascript" language="javascript">

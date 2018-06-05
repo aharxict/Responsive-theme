@@ -53,7 +53,7 @@
                         <!-- INCLUDE message.tpl -->   
         
 
-
+<div class="content-box">
 	<div class="outter page_account_settings">
 
 		<form name="edit" method="post" action="">
@@ -84,21 +84,21 @@
 								<!-- ENDIF -->
 								<!-- IF settings.enable_pictures AND settings.adult_images AND session.can_view_adult_images -->
 									<dt>
-										<label for="field_showadult">
+										<label class="checkbox" for="field_showadult">
 											<input type="checkbox" class="checkbox" name="showadult" value="1" id="field_showadult" <!-- IF showadult -->checked="checked"<!-- ENDIF --> />
-											{lang:"settings","showadult"}
+											<div class="checkbox__text">{lang:"settings","showadult"}</div>
 										</label>
 									</dt>
 								<!-- ENDIF -->
 								<!-- IF settings.enable_member_rating -->
 									<dt>
-										<label for="field_rated">
+										<label class="checkbox" for="field_rated">
 											<input type="checkbox" class="checkbox" name="rated" value="1" id="field_rated" <!-- IF rated -->checked="checked"<!-- ENDIF --> />
-											{lang:"settings","allow_rating"}
+											<div class="checkbox__text">{lang:"settings","allow_rating"}</div>
 										</label>
 									</dt>
 								<!-- ENDIF -->
-    							<dd class="submit" style="margin-top:0;"><input class="submit btn" type="submit" name="submit" value="{lang:"settings","submit"}" /></dd>
+    							<dd class="submit btn-box" style="margin-top:0;"><input class="submit btn" type="submit" name="submit" value="{lang:"settings","submit"}" /></dd>
 							</dl>
 						</div>
 					</div>
@@ -109,7 +109,7 @@
 		</form>
 
 	</div>
-                           
+</div>
                            
                            	</div>
 							

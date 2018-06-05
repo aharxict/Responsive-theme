@@ -1,5 +1,9 @@
 <!-- IF ext_news -->
 <div class="panel panel-default">
+    <div class="section-title">
+
+        <h2><em>{lang:"core","home_latest_news"}</em></h2>
+    </div>
    <div class="panel-heading">News</div>
    <div class="panel-body word-break">
       <!-- BEGIN ext_news -->
@@ -16,10 +20,10 @@
   
           <!-- ENDIF -->
             <div class="block">
-          <h5><a href="{top.virtual_path}{news_link}">{trim:news_title,40}</a></h5>
-          <em>{news_date}</em>
+          <h3><a href="{top.virtual_path}{news_link}">{trim:news_title,40}</a></h3>
+          <p>{news_date}</p>
           <p>{trim:news_body,120} </p>
-          <a href="{top.virtual_path}{news_link}">{lang:"core","home_read_more"}</a>
+            <!-- <a href="{top.virtual_path}{news_link}">{lang:"core","home_read_more"}</a> -->
             </div>
       </div>
       <!-- END ext_news -->

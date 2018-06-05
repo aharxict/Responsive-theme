@@ -2,7 +2,9 @@
 	<ul id="mainpanel">
 	    <li class="panel first"></li>
 	    <li id="settingspanel" class="panel panel-static" style="border-radius:0; box-shadow:none;">
-        	<a href="#" style="height:26px; width:28px;" class="button settings">{lang:"core","chat_settings"}</a>
+        	<a href="#" style="height:26px; width:28px;" class="button settings"><span class="glyphicon glyphicon-cog"></span>
+				<!-- {lang:"core","chat_settings"} --></a>
+
 	        <div class="subpanel">
             	<h3 style="margin-top:0; margin-bottom:0;"><span class="miminize"></span>{lang:"core","chat_settings"}</h3>
             	<div class="wrap">
@@ -19,7 +21,9 @@
 	        </div>
 	    </li>
 	    <li id="alertpanel" class="panel panel-static" style="border-radius:0; box-shadow:none;">
-        	<a href="#" style="height:26px; width:28px;" class="button alerts <!-- IF session.notifications_new -->alerts-new<!-- ENDIF -->">{lang:"core","chat_notifications"}</a>
+        	<a href="#" style="height:26px; width:28px;" class="button alerts <!-- IF session.notifications_new -->alerts-new<!-- ENDIF -->">
+				<span class="glyphicon glyphicon-bell"></span>
+				<!-- {lang:"core","chat_notifications"} --></a>
 	        <div class="subpanel">
             	<h3 style="margin-top:0; margin-bottom:0;"><span class="miminize"></span>{lang:"core","chat_notifications"}</h3>
             	<div class="wrap">
@@ -41,6 +45,7 @@
 	    <li id="chatpanel" class="panel panel-static" <!-- IF settings.enable_friends == "0" -->style="display:none"<!-- ELSE --> style="border-radius:0; box-shadow:none; border-left:0;"<!-- ENDIF -->>
         	<a href="#" class="button chat" style="width:200px; border-left:0;
 border-right: 1px solid #999999; height:26px;">
+				<span class="glyphicon glyphicon-globe"></span>
         		<span id="chat-friends-status" style="line-height:17px;" class="<!-- IF session.statusonline == "1" -->online<!-- ELSE -->invisible<!-- ENDIF -->">
         			{lang:"core","chat_friends"}
         			<!-- IF session.friends_online --> (<strong>{session.total_friends_online}</strong>)<!-- ENDIF -->
@@ -71,7 +76,7 @@ border-right: 1px solid #999999; height:26px;">
 	        </div>
 	    </li>
 	    <li id="imtemplate" class="panel impanel" style="display:none">
-        	<a href="#" class="button im" title="XusernameX">XshortusernameX</a>
+        	<a href="#" class="button im" title="XusernameX"><span class="glyphicon glyphicon-user"></span>XshortusernameX</a>
         	<span class="flag" style="display:none"></span>
 	        <div class="subpanel">
             	<h3>

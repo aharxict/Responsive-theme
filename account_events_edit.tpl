@@ -30,7 +30,7 @@
         
 
 <!-- IF hide_content != "1" -->
-
+<div class="content-box">
 	<div class="outter page_account_events_edit">
 
 		<div class="typepage">
@@ -121,7 +121,7 @@
 													</label>
 												</dt>
 											<!-- ENDIF -->
-    										<dd class="submit"><input class="submit btn" type="submit" name="submit" value="{lang:"events","submit"}" /></dd>
+    										<dd class="submit btn-box"><input class="submit btn" type="submit" name="submit" value="{lang:"events","submit"}" /></dd>
 										</dl>
 									</div>
 									<input type="hidden" name="isevent" value="1" />
@@ -135,7 +135,7 @@
 		<div class="clear"></div>
 
 	</div>
-
+</div>
 <!-- ENDIF -->
 
 							</div><div class="clearfix"></div>

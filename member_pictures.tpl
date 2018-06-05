@@ -16,8 +16,7 @@
 					<div class="col-sm-4 col-leftside">
 						<div class="blog-post blog-single-post" style="padding:5px !important;">
 	                           
-                            <!-- INCLUDE message.tpl -->
-                            
+
                             <div class="image picture_zoom">
                             <!-- INCLUDE member_sections_picture_profile.tpl -->
                             </div>
@@ -54,7 +53,7 @@
 <!-- INCLUDE message.tpl -->
 
 <!-- IF hide_content != "1" -->
-
+<div class="content-box">
 	<div class="outter page_member_pictures">
 
 		<div class="typepage">
@@ -95,7 +94,7 @@
 		<div class="clear"></div>
 
 	</div>
-
+</div>
 	<!-- IF total_pages > "1" -->
 		<div class="footer_wrap">
 			<div class="footer">

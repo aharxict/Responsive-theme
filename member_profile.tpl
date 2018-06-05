@@ -24,34 +24,34 @@
 						</div>
                         
                         
-                        <div style="box-shadow: 1px 1px 5px 0 #ced4e0;">
-                        <ul class="list-group" style="margin-top: 10px; margin-bottom:5px !important;">
+                        <div style="box-shadow: 0px 0px 0px 0 #ced4e0;">
+                        <ul class="list-group gradient-box" style="margin-top: 10px; margin-bottom:5px !important;">
                         
                         <!-- IF settings.enable_friends AND member_is_friend == "0" -->
-						<li class="list-group-item" style="border-left:none !important; border-right:none !important; border-top:none !important; border-bottom: 1px dotted #ddd; margin-bottom:0;">
+						<li class="list-group-item" style="border-left:none !important; border-right:none !important; border-top:none !important; border-bottom: 1px solid #ddd; margin-bottom:0;">
                         <a href="{virtual_path}{member_add_friends_link}" title="{lang:"member","friends"}"><span class="glyphicon glyphicon-user" style="width:20px;"></span> {lang:"member","add_friends"}</a>
                         </li>
 						<!-- ENDIF -->
                         
                         <!-- IF settings.enable_favorites AND member_is_self_favorite == "0" -->
-						<li class="list-group-item" style="border-left:none !important; border-right:none !important; border-top:none !important; border-bottom: 1px dotted #ddd; margin-bottom:0;">
+						<li class="list-group-item" style="border-left:none !important; border-right:none !important; border-top:none !important; border-bottom: 1px solid #ddd; margin-bottom:0;">
                         <a href="{virtual_path}{member_add_favorites_link}" title="{lang:"member","add_favorites"}"><span class="glyphicon glyphicon-star" style="width:20px;"></span> {lang:"member","add_favorites"}</a>
                         </li>
 						<!-- ENDIF -->
                         
                         <!-- IF settings.enable_messaging -->
-                        <li class="list-group-item" style="border-left:none !important; border-right:none !important; border-top:none !important; border-bottom: 1px dotted #ddd; margin-bottom:0;">
+                        <li class="list-group-item" style="border-left:none !important; border-right:none !important; border-top:none !important; border-bottom: 1px solid #ddd; margin-bottom:0;">
                         <a title="{lang:"member","send_message"}" href="{virtual_path}{member_send_message_link}"> <span class="glyphicon glyphicon-comment" style="width:20px;"></span> {lang:"member","send_message"}</a>
                         </li>
                         <!-- ENDIF -->
                         
                         <!-- IF settings.enable_gifts -->
-						<li class="list-group-item" style="border-left:none !important; border-right:none !important; border-top:none !important; border-bottom: 1px dotted #ddd; margin-bottom:0;">
+						<li class="list-group-item" style="border-left:none !important; border-right:none !important; border-top:none !important; border-bottom: 1px solid #ddd; margin-bottom:0;">
                         <a href="{virtual_path}{member_send_gift_link}" title="{lang:"member","send_gift"}"><span class="glyphicon glyphicon-gift" style="width:20px;"></span> {lang:"member","send_gift"}</a></li>
 						<!-- ENDIF -->
                         
                         <!-- IF settings.quick_messages -->
-						<li class="list-group-item wink" style="border-left:none !important; border-right:none !important; border-top:none !important; border-bottom: 1px dotted #ddd; margin-bottom:0;">
+						<li class="list-group-item wink" style="border-left:none !important; border-right:none !important; border-top:none !important; border-bottom: 1px solid #ddd; margin-bottom:0;">
 							<a href="#" title="{lang:"member","send_wink"}" onclick="showhide_field('send_wink_box');return false;"><span class="glyphicon glyphicon-eye-open" style="width:20px;"></span> {lang:"member","send_wink"}</a>
 								<div id="send_wink_box" class="winkbox" style="display: none">
 									<select class="select form-control" id="quick_messages" name="quick_messages">
@@ -105,7 +105,7 @@
                                 
                                 <div class="clearfix"></div>
 							</div>
-							
+							<div class="content-box">
 							<div class="single-post-content" style="border-bottom:none;">
                             <!-- INCLUDE message.tpl -->
                             
@@ -119,8 +119,8 @@
     <div class="dataitem single">
 
 							<!-- BEGIN profile_groups -->
-								<div class="datainfo profile">
-									<dl class="datainfo" style="padding:13px 13px 13px 13px; border-radius: 3px 3px 3px 3px; margin-top:-1px; margin-bottom:15px;">
+								<div class="datainfo profile gradient-box">
+									<dl class="datainfo 1" style="padding:13px 13px 13px 13px; border-radius: 3px 3px 3px 3px; margin-top:-1px; margin-bottom:15px;">
                                     <h3 style="font-size:18px;">{group_name}</h3>
 										<!-- BEGIN profile_fields -->
 											<dt style="float:left;">{field_name}:</dt>
@@ -168,6 +168,7 @@
                             
                             
                             
+							</div>
 							</div>
 						</div>
 

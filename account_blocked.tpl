@@ -45,7 +45,7 @@
 
 
 <!-- IF hide_content != "1" -->
-
+<div class="content-box">
 	<div class="outter page_account_blocked">
 
 		<div class="typemembers">
@@ -66,7 +66,7 @@
 									</dl>
 								</div>
 							</td>
-		                    <td>
+		                    <td class="blocked-actions">
 								<div class="actions">
 									<ul class="actions">
 										<!-- INCLUDE member_sections_quick_actions.tpl -->
@@ -85,7 +85,7 @@
 		<div class="clear"></div>
 
 	</div>
-
+</div>
 	<!-- IF total_pages > "1" -->
 		<div class="footer_wrap">
 			<div class="footer">

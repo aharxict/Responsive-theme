@@ -26,7 +26,7 @@
                            </div>
                         <!-- INCLUDE message.tpl -->   
         
-
+<div class="content-box">
 <div class="outter page_member_videos">
 
 	<div class="typemedia">
@@ -66,7 +66,7 @@
 	<div class="clearfix"></div>
 
 </div>
-
+</div>
 <style type="text/css">
 div.page_numbers {
 	margin-top: 10px;

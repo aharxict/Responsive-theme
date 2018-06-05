@@ -38,12 +38,12 @@
                                 </div>
                                 <div class="clearfix"></div>
                            </div>
-                           
+                         <div class="content-box message-box">
             			<span>{messages_info}</span>
                         
                         <!-- INCLUDE message.tpl -->
         
-        <div class="form" style="margin-top:15px;">
+        <div class="form" style="margin-top:15px; margin-bottom: 25px;">
 								<form method="post" name="message" action="">
 									<div class="fieldset">
 										<dl class="fieldset">
@@ -80,7 +80,7 @@
 									<input type="hidden" name="ismessage" value="1" />
 								</form>
 							</div>
-                           
+						 </div>
                            
                            	</div>
 							

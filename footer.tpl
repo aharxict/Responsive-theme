@@ -7,19 +7,21 @@
 				
 		    		<div class="col-footer col-md-4 col-xs-6">
 		    			<h3 style="padding-bottom:5px;">Jew-Friends.eu</h3>
-		    			<p style="line-height:1.7em;">The obvious choice for those looking for singles and want to meet serious today.</p>
+		    			<p style="line-height:1.7em;">Die Alternative um juedische Bekannte, Freunde und mehr zu finden. Viele Glueck.</p>
 		    		</div>				
 		    		<div class="col-footer col-md-4 col-xs-6">
-		    			<h3 style="padding-bottom:5px;">Customer Service</h3>
-						<p style="line-height:1.7em;">Our support is in place all around the clock, every day and provide quick answers and support to your questions and help you with tips and advice.</p>
+		    			<h3 style="padding-bottom:5px;">Kundendienst</h3>
+						<p style="line-height:1.7em;">Du hast eine Frage, ein Problem? Gerne helfen wir Dir schnellstmoeglich.</p>
 		    		</div>
 		    		<div class="col-footer col-md-4 col-xs-6">
-		    			<h3 style="padding-bottom:5px;">Follow Us:</h3>
+		    			<h3 style="padding-bottom:5px;">Folge uns:</h3>
 		    			<ul class="social">
-							<li class="facebook"><a href="http://www.facebook.com/#" target="_blank"></a></li>
-							<li class="google"><a href="http://plus.google.com/#" target="_blank"></a></li>
-							<li class="twitter"><a href="http://www.twitter.com/#" target="_blank"></a></li>
-							<li class="youtube"><a href="http://www.youtube.com/#" target="_blank"></a></li>
+							<li class="facebook"><a href="https://www.facebook.com/JewFriends.eu/" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+							<li class="google"><a href="mailto:info@jew-friends.eu"><i class="fa fa-envelope-square"></i></a></li>
+							<!--
+							<li class="twitter"><a href="http://www.twitter.com/#" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+							<li class="youtube"><a href="http://www.youtube.com/#" target="_blank"><i class="fa fa-youtube-square"></i></a></li>
+						 -->
 						</ul>
 		    		</div>
 
@@ -42,12 +44,13 @@
                         <!-- IF settings.enable_feedback -->
                         <span style="text-transform:uppercase;">
                         <a href="{virtual_path}{ifelse:settings.fancy_urls,"1","contactus/","index.php?m=contactus"}" style="color: #E4E4E4;">{lang:"core","menu_contactus"}</a>
-                        </span> | 
+                        </span>  |
                         <!-- ENDIF -->
-                        <span style="text-transform:uppercase;">
+						<span style="text-transform:uppercase;">
                         <a href="{virtual_path}{ifelse:settings.fancy_urls,"1","page/tos/","index.php?m=tos"}" style="color: #E4E4E4;">{lang:"core","menu_tos"}</a>
                         </span>
-                        <br /><div style="padding-top:5px;">&copy; 2016 <a href="{virtual_path}" style="color: #7C7C7C;">{htmlentities:settings.app_title}</a></div>
+
+                        <br /><div style="padding-top:5px;">&copy; 2018 <a href="{virtual_path}" style="color: #fff;">{htmlentities:settings.app_title}</a></div>
                         </div>
 		    		</div>
 		    	</div>
@@ -80,13 +83,27 @@ $(document).ready(function(){
         function() { $(this).addClass("shover"); },
         function() { $(this).removeClass("shover"); }
     );
-    if($('#reg_inner').length > 0) {
-        $('#reg_inner').load(virpath+'account/register #regwrapper',function(data) {
-        });
+   // if($('#reg_inner').length > 0) {
+     //   $('#reg_inner').load(virpath+'account/register #regwrapper',function(data) {
+       // });
         //console.log('true');
        // console.log(virpath);
-    }
+    //}
 });
+ (function ($) {
+     if($('#reg_inner').length > 0) {
+         $('#reg_inner').load(virpath+'account/register #regwrapper',function(data) {
+         });
+         //console.log('true');
+         // console.log(virpath);
+     }
+     if($('#login_inner').length > 0) {
+         $('#login_inner').load(virpath+'account/login .form',function(data) {
+         });
+         //console.log('true');
+         // console.log(virpath);
+     }
+ })(jQuery);
 //]]>
 </script>
 

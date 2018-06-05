@@ -24,7 +24,8 @@ include_once SYS_PATH . "includes/ext/core/ext.trim.php";
 	<ul id="mainpanel">
 	    <li class="panel first"></li>
 	    <li id="settingspanel" class="panel panel-static" style="border-radius:0; box-shadow:none;">
-        	<a href="#" style="height:26px; width:28px;" class="button settings"><?php echo vldext_lang("core","chat_settings"); ?></a>
+        	<a href="#" style="height:26px; width:28px;" class="button settings"><span class="glyphicon glyphicon-cog"></span><?php echo vldext_lang("core","chat_settings"); ?></a>
+
 	        <div class="subpanel">
             	<h3 style="margin-top:0; margin-bottom:0;"><span class="miminize"></span><?php echo vldext_lang("core","chat_settings"); ?></h3>
             	<div class="wrap">
@@ -41,7 +42,9 @@ include_once SYS_PATH . "includes/ext/core/ext.trim.php";
 	        </div>
 	    </li>
 	    <li id="alertpanel" class="panel panel-static" style="border-radius:0; box-shadow:none;">
-        	<a href="#" style="height:26px; width:28px;" class="button alerts <?php if ( @$SESSION->conf['notifications_new'] ) { ?>alerts-new<?php } ?>"><?php echo vldext_lang("core","chat_notifications"); ?></a>
+        	<a href="#" style="height:26px; width:28px;" class="button alerts <?php if ( @$SESSION->conf['notifications_new'] ) { ?>alerts-new<?php } ?>">
+				<span class="glyphicon glyphicon-bell"></span>
+				<?php echo vldext_lang("core","chat_notifications"); ?></a>
 	        <div class="subpanel">
             	<h3 style="margin-top:0; margin-bottom:0;"><span class="miminize"></span><?php echo vldext_lang("core","chat_notifications"); ?></h3>
             	<div class="wrap">
@@ -63,6 +66,7 @@ include_once SYS_PATH . "includes/ext/core/ext.trim.php";
 	    <li id="chatpanel" class="panel panel-static" <?php if ( @$PREFS->conf['enable_friends']  == "0") { ?>style="display:none"<?php } else { ?> style="border-radius:0; box-shadow:none; border-left:0;"<?php } ?>>
         	<a href="#" class="button chat" style="width:200px; border-left:0;
 border-right: 1px solid #999999; height:26px;">
+				<span class="glyphicon glyphicon-globe"></span>
         		<span id="chat-friends-status" style="line-height:17px;" class="<?php if ( @$SESSION->conf['statusonline']  == "1") { ?>online<?php } else { ?>invisible<?php } ?>">
         			<?php echo vldext_lang("core","chat_friends"); ?>
         			<?php if ( @$SESSION->conf['friends_online'] ) { ?> (<strong><?php echo isset($SESSION->conf['total_friends_online']) ? $SESSION->conf['total_friends_online'] : "&#123;total_friends_online&#125;"; ?></strong>)<?php } ?>
@@ -93,7 +97,7 @@ border-right: 1px solid #999999; height:26px;">
 	        </div>
 	    </li>
 	    <li id="imtemplate" class="panel impanel" style="display:none">
-        	<a href="#" class="button im" title="XusernameX">XshortusernameX</a>
+        	<a href="#" class="button im" title="XusernameX"><span class="glyphicon glyphicon-user"></span>XshortusernameX</a>
         	<span class="flag" style="display:none"></span>
 	        <div class="subpanel">
             	<h3>
@@ -117,6 +121,6 @@ border-right: 1px solid #999999; height:26px;">
 				</form>
 	        </div>
 	    </li>
-	    <li class="panel last" style="border-radius:0; background: #e3e2e2 url('footpanel/bg.png') repeat-x;"><div id="chatsndnotifyholder"></div></li>
+	    <li class="panel last" style="border-radius:0; background: #e3e2e2 url('<?php echo isset($_stack[0]['virtual_tpl_path']) ? $_stack[0]['virtual_tpl_path'] : "&#123;virtual_tpl_path&#125;"; ?><?php echo isset($SESSION->conf['template']) ? $SESSION->conf['template'] : "&#123;template&#125;"; ?>/media/footpanel/bg.png') repeat-x;"><div id="chatsndnotifyholder"></div></li>
 	</ul>
 </div>

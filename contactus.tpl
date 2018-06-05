@@ -1,4 +1,4 @@
-<!-- INCLUDE header.tpl -->
+﻿<!-- INCLUDE header.tpl -->
 
 <div class="section section-header">
 <div class="container">
@@ -26,7 +26,7 @@
                         <!-- INCLUDE message.tpl -->   
 
 <!-- IF hide_content != "1" -->
-
+<div class="content-box">
 	<div class="outter page_contactus">
 
 		<div class="typepage">
@@ -40,11 +40,11 @@
 								<dt><label for="field_subject">{lang:"contactus","subject"}</label></dt>
 								<dd>
 									<select name="subject" class="select form-control">
-										<option value="Förslag">Förslag</option>
-                                        <option value="Annonsera">Annonsera</option>
-                                        <option value="Rapportera missbruk">Rapportera missbruk</option>
-                                        <option value="Tekniska problem">Tekniska problem</option>
-                                        <option value="Annan fråga">Annan fråga</option>
+										<option value="Vorschlag">Vorschlag</option>
+                                        <option value="Werbung">Werbung</option>
+                                        <option value="Missbrauch melden">Missbrauch melden</option>
+                                        <option value="Technische Probleme">Technische Probleme</option>
+                                        <option value="Andere Frage">Andere Frage</option>
                                     </select>
 								</dd>
 								<dt><label for="field_body">{lang:"contactus","message"}</label></dt>
@@ -63,7 +63,7 @@
                                         </div>
 									</dd>
 								<!-- ENDIF -->
-    							<dd class="submit"><input style="margin-top:10px;" class="submit btn" name="submit" value="{lang:"contactus","submit"}" type="submit" /></dd>
+    							<dd class="submit btn-box"><input style="margin-top:10px;" class="submit btn" name="submit" value="{lang:"contactus","submit"}" type="submit" /></dd>
 							</dl>
 						</div>
 						<input type="hidden" name="iscontactus" value="1" />
@@ -75,7 +75,7 @@
 		<div class="clear"></div>
 
 	</div>
-
+</div>
 <!-- ENDIF -->
 
 							</div><div class="clearfix"></div>

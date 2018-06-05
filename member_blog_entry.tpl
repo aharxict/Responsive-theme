@@ -53,7 +53,7 @@
 
        
 <!-- IF hide_content != "1" -->
-
+<div class="content-box">
 	<div class="outter page_member_blogs_entry">
 		<div class="typepage">
 
@@ -145,7 +145,7 @@ div.reportbox div.popup {
 		</div>
 		<div class="clear"></div>
 	</div>
-
+</div>
 <!-- ENDIF -->
 		</div>
 		<div class="clear"></div>

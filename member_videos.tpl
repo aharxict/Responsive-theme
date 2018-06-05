@@ -27,7 +27,7 @@
                         <!-- INCLUDE message.tpl -->   
         
 <!-- IF hide_content != "1" -->
-
+<div class="content-box">
 	<div class="outter page_member_videos">
 
 		<div class="typepage">
@@ -56,10 +56,10 @@
 				<!-- END profile_videos -->
 			</div>
 		</div>
-		<div class="clear"></div>
+		<div class="clear" style="clear: both;"></div>
 
 	</div>
-
+</div>
 	<!-- IF total_pages > "1" -->
 		<div class="footer_wrap">
 			<div class="footer">

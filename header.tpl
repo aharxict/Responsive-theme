@@ -53,10 +53,10 @@
 <link rel="stylesheet" href="{virtual_tpl_path}{session.template}/css/main.css">
 <link href="{virtual_tpl_path}{session.template}/css/custom.css" rel="stylesheet">
 
-<script src="http://use.edgefonts.net/bebas-neue.js"></script>
+<script src="https://use.edgefonts.net/bebas-neue.js"></script>
 
 <!-- Custom Fonts & Icons -->
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,600,800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,600,800' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="{virtual_tpl_path}{session.template}/css/icomoon-social.css">
 <link rel="stylesheet" href="{virtual_tpl_path}{session.template}/css/font-awesome.min.css">
 
@@ -117,26 +117,30 @@ height: 100%;
 
 </head>
 <body style="height: 100%;" <!-- IF loggedin AND settings.enable_chat AND session.can_chat -->onload="initChat({settings.chat_check_sec},'{session.username}',{session.sound_notify});"<!-- ENDIF -->>
-<div class="pagewrapper" style="min-height: 100%; height: auto !important; height: 100%; margin: 0 auto;">
+<div class="pagewrapper" style="min-height: 100%; height: auto !important; height: 100%; margin: 0 auto;
+<!-- IF loggedin == "0" -->
+padding-top: 60px;
+<!-- ENDIF -->
+">
 
 <header class="navbar navbar-inverse navbar-fixed-top" role="banner" style="padding:0px;">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-top">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
                 <!-- IF loggedin == "0" -->
-                <a class="navbar-brand" href="{virtual_path}"><img src="{virtual_tpl_path}{session.template}/media/logo.png" alt="" style="margin-top:-6px;"></a>
+                <a class="navbar-brand" href="{virtual_path}"><img src="{virtual_tpl_path}{session.template}/media/small_logo_2.png" alt="" style="margin-top:-6px;"></a>
                 <!-- ELSE -->
-				<a class="navbar-brand" href="{virtual_path}"><img src="{virtual_tpl_path}{session.template}/media/logo.png" alt="" style="margin-top:-6px;"></a>
+				<a class="navbar-brand loged" href="{virtual_path}"><img src="{virtual_tpl_path}{session.template}/media/small_logo_2.png" alt="" style="margin-top:-6px;"></a>
 
 				<!-- <a class="navbar-brand" href="{virtual_path}{ifelse:settings.fancy_urls,"1","account/home/","index.php?m=account_home"}"><img src="{virtual_tpl_path}{session.template}/media/logo.png" alt="" style="margin-top:-6px;"></a> -->
                 <!-- ENDIF -->
             </div>
-		<div class="collapse navbar-collapse">
+		<div class="collapse navbar-collapse navbar-collapse-top">
 		<ul class="nav navbar-nav sub-menu"
 			<!-- IF loggedin == "1" -->
 			style="display: none;"
@@ -192,7 +196,7 @@ height: 100%;
         <li><a href="{virtual_path}videos/">{lang:"core","menu_videos"}</a></li>
         <!-- ENDIF -->
 		<!-- IF settings.enable_events -->
-		<li><a href="{virtual_path}events/">{lang:"core","menu_events"}</a></li>
+		<li><a href="{virtual_path}events/calendar/">{lang:"core","menu_events"}</a></li>
 		<!-- ENDIF -->
 		<!-- IF settings.enable_hotornot_page AND settings.enable_picture_rating -->
 		<li><a href="{virtual_path}hotornot/">{lang:"core","menu_rate"}</a></li>
@@ -216,4 +220,6 @@ height: 100%;
 
 		</div>
 	</div>
-</header><!--/header-->
+</header>
+<div id="inner-user-menu"></div>
+<!--/header-->

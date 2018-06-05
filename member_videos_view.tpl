@@ -52,7 +52,7 @@
 
 
 <!-- IF hide_content != "1" -->
-
+<div class="content-box">
 	<div class="outter page_member_videos_view">
 		<div class="typepage">
 
@@ -118,7 +118,7 @@ object{
 		</div>
 		<div class="clear"></div>
 	</div>
-
+</div>
 <!-- ENDIF -->
                            
                            

@@ -34,12 +34,19 @@
 						<div class="fieldset">
 							<dl class="fieldset fieldgrid">
 								<dt><label for="field_username">{lang:"login","username"}</label></dt>
-								<dd style="padding-bottom:10px;"><input maxlength="64" size="30" type="text" id="field_username" name="username" value="" class="text form-control" /></dd>
+								<dd class="icon-field user-field" style="padding-bottom:10px;"><input maxlength="64" size="30" type="text" id="field_username" name="username" value="" class="text form-control" placeholder="{lang:"login","username"}" /></dd>
 								<dt><label for="field_password">{lang:"login","password"}</label></dt>
-								<dd style="padding-bottom:10px;"><input maxlength="32" size="30" type="password" id="field_password" name="password" value="" class="text form-control" /></dd>
-								<dt><label for="field_nonxpcookie">{lang:"login","remember_me"}</label></dt>
+								<dd class="icon-field password-field" style="padding-bottom:10px;"><input maxlength="32" size="30" type="password" id="field_password" name="password" value="" class="text form-control" placeholder="{lang:"login","password"}" /></dd>
+								<dt><label class="remember" for="field_nonxpcookie">{lang:"login","remember_me"}</label></dt>
 								<dd style="padding-bottom:20px;"><select class="select form-control" name="nonxpcookie" id="field_nonxpcookie">{dropdownlist:yesnobox,0}</select></dd>
-    							<dd class="submit"><input type="submit" name="submit" value="{lang:"login","submit"}" class="submit btn" /></dd>
+									<dd class="submit">
+										<div style="display:none;" id="login_back" class="btn-default btn pull-left">Zurück</div>
+
+										<button type="submit" name="submit" value="{lang:"login","submit"}" class="submit btn" >{lang:"login","submit"}</button>
+
+									</dd>
+
+
 							</dl>
 							<div class="clear"></div>
 						</div>

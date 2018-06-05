@@ -29,20 +29,20 @@ include_once SYS_PATH . "includes/ext/core/ext.htmlentities.php";
 		    	<div class="row">
 				
 		    		<div class="col-footer col-md-4 col-xs-6">
-		    			<h3 style="padding-bottom:5px;">YourWebsite.com</h3>
-		    			<p style="line-height:1.7em;">The obvious choice for those looking for singles and want to meet serious today.</p>
+		    			<h3 style="padding-bottom:5px;">Jew-Friends.eu</h3>
+		    			<p style="line-height:1.7em;">Die Alternative um juedische Bekannte, Freunde und mehr zu finden. Viele Glueck.</p>
 		    		</div>				
 		    		<div class="col-footer col-md-4 col-xs-6">
-		    			<h3 style="padding-bottom:5px;">Customer Service</h3>
-						<p style="line-height:1.7em;">Our support is in place all around the clock, every day and provide quick answers and support to your questions and help you with tips and advice.</p>
+		    			<h3 style="padding-bottom:5px;">Kundendienst</h3>
+						<p style="line-height:1.7em;">Du hast eine Frage, ein Problem? Gerne helfen wir Dir schnellstmoeglich.</p>
 		    		</div>
 		    		<div class="col-footer col-md-4 col-xs-6">
-		    			<h3 style="padding-bottom:5px;">Follow Us:</h3>
+		    			<h3 style="padding-bottom:5px;">Folge uns:</h3>
 		    			<ul class="social">
-							<li class="facebook"><a href="http://www.facebook.com/#" target="_blank"></a></li>
-							<li class="google"><a href="http://plus.google.com/#" target="_blank"></a></li>
-							<li class="twitter"><a href="http://www.twitter.com/#" target="_blank"></a></li>
-							<li class="youtube"><a href="http://www.youtube.com/#" target="_blank"></a></li>
+							<li class="facebook"><a href="http://www.facebook.com/#" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+							<li class="google"><a href="http://plus.google.com/#" target="_blank"><i class="fa fa-google-plus-square"></i></a></li>
+							<li class="twitter"><a href="http://www.twitter.com/#" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+							<li class="youtube"><a href="http://www.youtube.com/#" target="_blank"><i class="fa fa-youtube-square"></i></a></li>
 						</ul>
 		    		</div>
 
@@ -82,13 +82,18 @@ include_once SYS_PATH . "includes/ext/core/ext.htmlentities.php";
 <?php } ?>
 
 <!-- Javascripts -->
+<!--
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="<?php echo isset($_obj['virtual_tpl_path']) ? $_obj['virtual_tpl_path'] : "&#123;virtual_tpl_path&#125;"; ?><?php echo isset($SESSION->conf['template']) ? $SESSION->conf['template'] : "&#123;template&#125;"; ?>/js/jquery-1.9.1.min.js"><\/script>')</script>
+
+<script>window.jQuery || document.write('<script src="<?php echo isset($_obj['virtual_tpl_path']) ? $_obj['virtual_tpl_path'] : "&#123;virtual_tpl_path&#125;"; ?><?php echo isset($SESSION->conf['template']) ? $SESSION->conf['template'] : "&#123;template&#125;"; ?>/js/jquery-1.9.1.min.js"><\/script>')</script>-->
 <script src="<?php echo isset($_obj['virtual_tpl_path']) ? $_obj['virtual_tpl_path'] : "&#123;virtual_tpl_path&#125;"; ?><?php echo isset($SESSION->conf['template']) ? $SESSION->conf['template'] : "&#123;template&#125;"; ?>/js/bootstrap.min.js"></script>
 
 <!-- Scrolling Nav JavaScript -->
 <script src="<?php echo isset($_obj['virtual_tpl_path']) ? $_obj['virtual_tpl_path'] : "&#123;virtual_tpl_path&#125;"; ?><?php echo isset($SESSION->conf['template']) ? $SESSION->conf['template'] : "&#123;template&#125;"; ?>/js/jquery.easing.min.js"></script>
 <script src="<?php echo isset($_obj['virtual_tpl_path']) ? $_obj['virtual_tpl_path'] : "&#123;virtual_tpl_path&#125;"; ?><?php echo isset($SESSION->conf['template']) ? $SESSION->conf['template'] : "&#123;template&#125;"; ?>/js/scrolling-nav.js"></script>
+
+
+<script src="<?php echo isset($_obj['virtual_tpl_path']) ? $_obj['virtual_tpl_path'] : "&#123;virtual_tpl_path&#125;"; ?><?php echo isset($SESSION->conf['template']) ? $SESSION->conf['template'] : "&#123;template&#125;"; ?>/js/custom.js"></script>
 
 <script type="text/javascript" language="javascript">
  //<![CDATA[
@@ -98,9 +103,30 @@ $(document).ready(function(){
         function() { $(this).addClass("shover"); },
         function() { $(this).removeClass("shover"); }
     );
+   // if($('#reg_inner').length > 0) {
+     //   $('#reg_inner').load(virpath+'account/register #regwrapper',function(data) {
+       // });
+        //console.log('true');
+       // console.log(virpath);
+    //}
 });
+ (function ($) {
+     if($('#reg_inner').length > 0) {
+         $('#reg_inner').load(virpath+'account/register #regwrapper',function(data) {
+         });
+         //console.log('true');
+         // console.log(virpath);
+     }
+     if($('#login_inner').length > 0) {
+         $('#login_inner').load(virpath+'account/login .form',function(data) {
+         });
+         //console.log('true');
+         // console.log(virpath);
+     }
+ })(jQuery);
 //]]>
 </script>
+
 <script type="text/javascript" src="<?php echo isset($_obj['virtual_tpl_path']) ? $_obj['virtual_tpl_path'] : "&#123;virtual_tpl_path&#125;"; ?><?php echo isset($SESSION->conf['template']) ? $SESSION->conf['template'] : "&#123;template&#125;"; ?>/js/jquery.nivo.slider.js"></script>
 </body>
 </html>

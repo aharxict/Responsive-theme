@@ -43,10 +43,11 @@
                                 </div>
                                 <div class="clearfix"></div>
                            </div>
+						<div class="content-box">
                         <!-- INCLUDE message.tpl -->   
             			<span>{messages_info}</span>
         
-        <div class="form" style="margin-top:15px;">
+        <div class="form 123" style="margin-top:15px;">
 								<form name="messages" method="post" action="{virtual_path}{messages_delete_link}">
 
 			<table class="pmbox" style="width:100%;">
@@ -93,7 +94,7 @@
 
 		</form>
 							</div>
-                           
+						</div>
                            
                            	</div>
 							

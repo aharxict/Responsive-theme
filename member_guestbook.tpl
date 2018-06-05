@@ -56,7 +56,7 @@
 
        
 <!-- IF hide_content != "1" -->
-
+<div class="content-box">
 	<div class="outter page_member_guestbook">
 		<div class="typecontent">
 
@@ -104,7 +104,7 @@ div.reportbox div.popup {
 				</div>
                 <hr />
 			<!-- END guestbook_entries -->
-
+<div class="content-box">
 			<div class="commentsform page_member_guestbook_submit" style="margin-top:15px;">
 				<div class="dataitem single">
 					<div class="form">
@@ -120,7 +120,7 @@ div.reportbox div.popup {
 											<img src="{virtual_path}includes/fns/fns.captcha.php" alt="" border="0" class="captcha" style="float:left;" /><div class="clearfix"></div>
 										</dd>
 									<!-- ENDIF -->
-    								<dd class="submit"><input class="submit btn" type="submit" name="submit" value="{lang:"member","submit"}" /></dd>
+    								<dd class="submit btn-box"><input class="submit btn" type="submit" name="submit" value="{lang:"member","submit"}" /></dd>
 								</dl>
 							</div>
 							<input type="hidden" name="isguestbook" value="1" />
@@ -128,11 +128,12 @@ div.reportbox div.popup {
 					</div>
 				</div>
 			</div>
+</div>
 		</div>
 		<div class="clear"></div>
 
 	</div>
-
+</div>
 	<!-- IF total_pages > "1" -->
 		<div class="footer_wrap">
 			<div class="footer">

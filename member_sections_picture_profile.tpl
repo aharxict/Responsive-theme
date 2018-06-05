@@ -39,7 +39,7 @@
             </a>
 		<!-- ENDIF -->
 	<!-- ELSE -->
-		<a href="{top.virtual_path}{member_profile_link}"><img src="{top.virtual_tpl_path}{session.template}/media/user_picture_adult.gif" alt="" border="0" /><br/></a>
+		<a class="adult-picture" href="{top.virtual_path}{member_profile_link}"><img src="{top.virtual_tpl_path}{session.template}/media/user_picture_adult.gif" alt="" border="0" /><br/></a>
 	<!-- ENDIF -->
 <!-- ELSE -->
 	

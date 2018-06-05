@@ -86,11 +86,18 @@ include_once SYS_PATH . "includes/ext/ext.anchor.php";
 <link rel="stylesheet" href="<?php echo isset($_obj['virtual_tpl_path']) ? $_obj['virtual_tpl_path'] : "&#123;virtual_tpl_path&#125;"; ?><?php echo isset($SESSION->conf['template']) ? $SESSION->conf['template'] : "&#123;template&#125;"; ?>/css/font-awesome.min.css">
 
 <script type="text/javascript" src="<?php echo isset($_obj['virtual_path']) ? $_obj['virtual_path'] : "&#123;virtual_path&#125;"; ?>includes/js/jquery.js"></script>
+
+	<script src="<?php echo isset($_obj['virtual_tpl_path']) ? $_obj['virtual_tpl_path'] : "&#123;virtual_tpl_path&#125;"; ?><?php echo isset($SESSION->conf['template']) ? $SESSION->conf['template'] : "&#123;template&#125;"; ?>/js/jquery-1.9.1.min.js"></script>
+
+	<?php if ( $this->objval($_obj,'loggedin')  &&  @$PREFS->conf['enable_chat']  &&  @$SESSION->conf['can_chat'] ) { ?>
+	<script type="text/javascript" src="<?php echo isset($_obj['virtual_path']) ? $_obj['virtual_path'] : "&#123;virtual_path&#125;"; ?>includes/js/jquery.cookie.js"></script>
+	<?php } ?>
 <script type="text/javascript" src="<?php echo isset($_obj['virtual_path']) ? $_obj['virtual_path'] : "&#123;virtual_path&#125;"; ?>includes/js/misc.js"></script>
 
 <?php if ( $this->objval($_obj,'loggedin')  &&  @$PREFS->conf['enable_chat']  &&  @$SESSION->conf['can_chat'] ) { ?>
 <link rel="stylesheet" type="text/css" href="<?php echo isset($_obj['virtual_tpl_path']) ? $_obj['virtual_tpl_path'] : "&#123;virtual_tpl_path&#125;"; ?><?php echo isset($SESSION->conf['template']) ? $SESSION->conf['template'] : "&#123;template&#125;"; ?>/media/footpanel.css" />
 <script type="text/javascript" src="<?php echo isset($_obj['virtual_path']) ? $_obj['virtual_path'] : "&#123;virtual_path&#125;"; ?>includes/js/jquery.cookie.js"></script>
+
 <script type="text/javascript" src="<?php echo isset($_obj['virtual_path']) ? $_obj['virtual_path'] : "&#123;virtual_path&#125;"; ?>includes/js/chat.js"></script>
 <?php } ?>
 
@@ -104,10 +111,10 @@ include_once SYS_PATH . "includes/ext/ext.anchor.php";
 	
 <?php if ( $this->objval($_obj,'loggedin')  == "1") { ?>
 <script type="text/javascript">
-(function worker() {
+/*(function worker() {
   $.ajax({
 	type: 'POST',
-    url: '<?php echo isset($_obj['virtual_tpl_path']) ? $_obj['virtual_tpl_path'] : "&#123;virtual_tpl_path&#125;"; ?><?php echo isset($SESSION->conf['template']) ? $SESSION->conf['template'] : "&#123;template&#125;"; ?>/ajax.php', 
+    url: '<?php echo isset($_obj['virtual_tpl_path']) ? $_obj['virtual_tpl_path'] : "&#123;virtual_tpl_path&#125;"; ?><?php echo isset($SESSION->conf['template']) ? $SESSION->conf['template'] : "&#123;template&#125;"; ?>/ajax.php',
     data: { userid: '<?php echo isset($SESSION->conf['member_id']) ? $SESSION->conf['member_id'] : "&#123;member_id&#125;"; ?>' },
 	cache: false,
 	success: function(data) {
@@ -118,7 +125,7 @@ include_once SYS_PATH . "includes/ext/ext.anchor.php";
       setTimeout(worker, 5000);
     }
   });
-})();
+})();*/
 </script>
 <?php } ?>
 
@@ -131,26 +138,47 @@ html, body {
 height: 100%;
 }
 </style>
+	<link rel="stylesheet" href="<?php echo isset($_obj['virtual_tpl_path']) ? $_obj['virtual_tpl_path'] : "&#123;virtual_tpl_path&#125;"; ?><?php echo isset($SESSION->conf['template']) ? $SESSION->conf['template'] : "&#123;template&#125;"; ?>/css/style.css">
+
 </head>
 <body style="height: 100%;" <?php if ( $this->objval($_obj,'loggedin')  &&  @$PREFS->conf['enable_chat']  &&  @$SESSION->conf['can_chat'] ) { ?>onload="initChat(<?php echo isset($PREFS->conf['chat_check_sec']) ? $PREFS->conf['chat_check_sec'] : "&#123;chat_check_sec&#125;"; ?>,'<?php echo isset($SESSION->conf['username']) ? $SESSION->conf['username'] : "&#123;username&#125;"; ?>',<?php echo isset($SESSION->conf['sound_notify']) ? $SESSION->conf['sound_notify'] : "&#123;sound_notify&#125;"; ?>);"<?php } ?>>
-<div class="pagewrapper" style="min-height: 100%; height: auto !important; height: 100%; margin: 0 auto;">
+<div class="pagewrapper" style="min-height: 100%; height: auto !important; height: 100%; margin: 0 auto;
+<?php if ( $this->objval($_obj,'loggedin')  == "0") { ?>
+padding-top: 60px;
+<?php } ?>
+">
 
 <header class="navbar navbar-inverse navbar-fixed-top" role="banner" style="padding:0px;">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-top">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
                 <?php if ( $this->objval($_obj,'loggedin')  == "0") { ?>
-                <a class="navbar-brand" href="<?php echo isset($_obj['virtual_path']) ? $_obj['virtual_path'] : "&#123;virtual_path&#125;"; ?>"><img src="<?php echo isset($_obj['virtual_tpl_path']) ? $_obj['virtual_tpl_path'] : "&#123;virtual_tpl_path&#125;"; ?><?php echo isset($SESSION->conf['template']) ? $SESSION->conf['template'] : "&#123;template&#125;"; ?>/media/logo.png" alt="" style="margin-top:-6px;"></a>
+                <a class="navbar-brand" href="<?php echo isset($_obj['virtual_path']) ? $_obj['virtual_path'] : "&#123;virtual_path&#125;"; ?>"><img src="<?php echo isset($_obj['virtual_tpl_path']) ? $_obj['virtual_tpl_path'] : "&#123;virtual_tpl_path&#125;"; ?><?php echo isset($SESSION->conf['template']) ? $SESSION->conf['template'] : "&#123;template&#125;"; ?>/media/small_logo_2.png" alt="" style="margin-top:-6px;"></a>
                 <?php } else { ?>
-                <a class="navbar-brand" href="<?php echo isset($_obj['virtual_path']) ? $_obj['virtual_path'] : "&#123;virtual_path&#125;"; ?><?php echo vldext_ifelse($PREFS->conf['fancy_urls'],"1","account/home/","index.php?m=account_home"); ?>"><img src="<?php echo isset($_obj['virtual_tpl_path']) ? $_obj['virtual_tpl_path'] : "&#123;virtual_tpl_path&#125;"; ?><?php echo isset($SESSION->conf['template']) ? $SESSION->conf['template'] : "&#123;template&#125;"; ?>/media/logo.png" alt="" style="margin-top:-6px;"></a>
+				<a class="navbar-brand loged" href="<?php echo isset($_obj['virtual_path']) ? $_obj['virtual_path'] : "&#123;virtual_path&#125;"; ?>"><img src="<?php echo isset($_obj['virtual_tpl_path']) ? $_obj['virtual_tpl_path'] : "&#123;virtual_tpl_path&#125;"; ?><?php echo isset($SESSION->conf['template']) ? $SESSION->conf['template'] : "&#123;template&#125;"; ?>/media/small_logo_2.png" alt="" style="margin-top:-6px;"></a>
+
+				<!-- <a class="navbar-brand" href="<?php echo isset($_obj['virtual_path']) ? $_obj['virtual_path'] : "&#123;virtual_path&#125;"; ?><?php echo vldext_ifelse($PREFS->conf['fancy_urls'],"1","account/home/","index.php?m=account_home"); ?>"><img src="<?php echo isset($_obj['virtual_tpl_path']) ? $_obj['virtual_tpl_path'] : "&#123;virtual_tpl_path&#125;"; ?><?php echo isset($SESSION->conf['template']) ? $SESSION->conf['template'] : "&#123;template&#125;"; ?>/media/logo.png" alt="" style="margin-top:-6px;"></a> -->
                 <?php } ?>
             </div>
-		<div class="collapse navbar-collapse">
+		<div class="collapse navbar-collapse navbar-collapse-top">
+		<ul class="nav navbar-nav sub-menu"
+			<?php if ( $this->objval($_obj,'loggedin')  == "1") { ?>
+			style="display: none;"
+			<?php } ?>
+		>
+			<?php if ( $this->objval($_obj,'loggedin')  == "0") { ?>
+			<li><a href="<?php echo isset($_obj['virtual_path']) ? $_obj['virtual_path'] : "&#123;virtual_path&#125;"; ?><?php echo vldext_ifelse($PREFS->conf['fancy_urls'],"1","account/login/","index.php?m=account_login"); ?>"><?php echo vldext_lang("core","menu_login"); ?></a></li>
+			<?php } ?>
+			<?php if ( $this->objval($_obj,'loggedin')  == "0") { ?>
+			<li><a href="<?php echo isset($_obj['virtual_path']) ? $_obj['virtual_path'] : "&#123;virtual_path&#125;"; ?><?php echo vldext_ifelse($PREFS->conf['fancy_urls'],"1","account/register/","index.php?m=account_register"); ?>"><?php echo vldext_lang("core","menu_register"); ?></a></li>
+			<?php } ?>
+
+		</ul>
 		<ul class="nav navbar-nav navbar-right">
 
 		<?php if ( $this->objval($_obj,'loggedin')  == "0") { ?>
@@ -158,9 +186,7 @@ height: 100%;
 		<?php } else { ?>
 		<li><a href="<?php echo isset($_obj['virtual_path']) ? $_obj['virtual_path'] : "&#123;virtual_path&#125;"; ?><?php echo vldext_ifelse($PREFS->conf['fancy_urls'],"1","account/home/","index.php?m=account_home"); ?>"><?php echo vldext_lang("core","menu_index"); ?></a></li>
 		<?php } ?>
-		<?php if ( $this->objval($_obj,'loggedin')  == "0") { ?>
-		<li><a href="<?php echo isset($_obj['virtual_path']) ? $_obj['virtual_path'] : "&#123;virtual_path&#125;"; ?><?php echo vldext_ifelse($PREFS->conf['fancy_urls'],"1","account/register/","index.php?m=account_register"); ?>"><?php echo vldext_lang("core","menu_register"); ?></a></li>
-		<?php } ?>
+
 		<?php if ( @$PREFS->conf['is_news'] ) { ?>
 		<li><a href="<?php echo isset($_obj['virtual_path']) ? $_obj['virtual_path'] : "&#123;virtual_path&#125;"; ?>news/"><?php echo vldext_lang("core","menu_news"); ?></a></li>
 		<?php } ?>
@@ -195,7 +221,7 @@ height: 100%;
         <li><a href="<?php echo isset($_obj['virtual_path']) ? $_obj['virtual_path'] : "&#123;virtual_path&#125;"; ?>videos/"><?php echo vldext_lang("core","menu_videos"); ?></a></li>
         <?php } ?>
 		<?php if ( @$PREFS->conf['enable_events'] ) { ?>
-		<li><a href="<?php echo isset($_obj['virtual_path']) ? $_obj['virtual_path'] : "&#123;virtual_path&#125;"; ?>events/"><?php echo vldext_lang("core","menu_events"); ?></a></li>
+		<li><a href="<?php echo isset($_obj['virtual_path']) ? $_obj['virtual_path'] : "&#123;virtual_path&#125;"; ?>events/calendar/"><?php echo vldext_lang("core","menu_events"); ?></a></li>
 		<?php } ?>
 		<?php if ( @$PREFS->conf['enable_hotornot_page']  &&  @$PREFS->conf['enable_picture_rating'] ) { ?>
 		<li><a href="<?php echo isset($_obj['virtual_path']) ? $_obj['virtual_path'] : "&#123;virtual_path&#125;"; ?>hotornot/"><?php echo vldext_lang("core","menu_rate"); ?></a></li>
@@ -213,12 +239,12 @@ height: 100%;
 		<?php if ( @$SESSION->conf['can_access_cp'] ) { ?>
 		<li><?php echo vldext_anchor(array('host'=>$_obj['virtual_cp_path'],'url1'=>"",'url2'=>"",'name'=>"CP",'pre'=>"<span>",'pro'=>"</span>")); ?></li>
 		<?php } ?>
-		
-        <?php if ( $this->objval($_obj,'loggedin')  == "0") { ?>
-		<li><a href="<?php echo isset($_obj['virtual_path']) ? $_obj['virtual_path'] : "&#123;virtual_path&#125;"; ?><?php echo vldext_ifelse($PREFS->conf['fancy_urls'],"1","account/login/","index.php?m=account_login"); ?>"><?php echo vldext_lang("core","menu_login"); ?></a></li>
-		<?php } ?>
+
                 
 		</ul>
+
 		</div>
 	</div>
-</header><!--/header-->
+</header>
+<div id="inner-user-menu"></div>
+<!--/header-->

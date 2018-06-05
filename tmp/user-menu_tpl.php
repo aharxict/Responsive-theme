@@ -20,7 +20,7 @@ http://www.vldpersonals.com/agreement/
 
 include_once SYS_PATH . "includes/ext/core/ext.lang.php";
 include_once SYS_PATH . "includes/ext/core/ext.ifelse.php";
- ?><nav role="navigation" class="navbar navbar-default navbar-usermenu usermenu-profile" style="background-color:transparent;">
+ ?><nav id="user-menu" role="navigation" class="navbar navbar-default navbar-usermenu usermenu-profile">
 
 	<!-- Brand and toggle get grouped for better mobile display -->
 	<div class="navbar-header">
@@ -30,7 +30,7 @@ include_once SYS_PATH . "includes/ext/core/ext.ifelse.php";
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 		</button>
-		<a href="#" class="navbar-brand2" style="color:#828282;">Menu</a>
+		<div href="#" class="navbar-brand2">Menu</div>
 	</div>
 
 	<!-- Collection of nav links, forms, and other content for toggling -->

@@ -24,7 +24,7 @@
                            </div>
                         <!-- INCLUDE message.tpl -->   
         
-
+<div class="content-box">
 <div class="outter page_member_blogs">
 
 	<!-- IF hide_content != "1" AND globalblogs_entries -->
@@ -69,7 +69,7 @@
 	<!-- ENDIF -->
 
 </div>
-
+</div>
 <!-- IF hide_content != "1" -->
 	<!-- IF total_pages > "1" -->
 		<div class="footer_wrap">

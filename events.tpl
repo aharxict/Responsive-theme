@@ -17,7 +17,8 @@
 					<!-- Blog Post Excerpt -->
 					<div class="col-sm-8">
 						<div class="blog-post blog-single-post page-content">
-							<div class="single-post-title" style="border-bottom: 2px dotted #CCC; margin-bottom:15px;">
+
+							<div class="single-post-title events" style="border-bottom: 2px dotted #CCC; margin-bottom:15px;">
 								<div style="float:left;"><h2>{lang:"events","app_events"}</h2></div>
                                 
                                 <div style="float:right; padding-bottom:5px;">
@@ -30,11 +31,12 @@
 
                                 <div class="clearfix"></div>
                            </div>
+<div class="content-box">
 
 			<div style="margin-bottom:15px;">
-				<div style="float:left; padding-right:5px; font-size:16px; font-weight:bold;">{anchor:url1="events/calendar/",url2="index.php?m=events&p=calendar",name="events|frm_events"}</div>
+				<div style="float:left; padding-right:5px; font-size:16px; font-weight:bold;">{anchor:url1="events/",url2="index.php?m=events&p=calendar",name="events|frm_events"}</div>
 				<div style="float:left; padding-right:5px; font-size:16px; font-weight:bold;"><span>&#187;</span></div>
-				<div style="float:left; padding-right:2px; font-size:16px; font-weight:bold;"><a href="{virtual_path}{events_link}">{events_date}</a></div>
+				<div style="float:left; padding-right:2px; font-size:16px; font-weight:bold;"><span>{events_date}</span></div>
 				<div style="float:right; padding-right:2px; font-size:16px; font-weight:bold;"><a href="{virtual_path}{ifelse:settings.fancy_urls,"1","events/rss/","index.php?m=events&p=rss"}" target="_blank"><img src="{virtual_tpl_path}{session.template}/media/rss.png" border="0" /></a></div>
                 <div class="clearfix"></div>
 			</div>
@@ -43,7 +45,6 @@
 <!-- INCLUDE message.tpl -->        
 
 <!-- IF hide_content != "1" -->
-
 	<div class="outter page_events">
 
 		<div class="typemedia">
@@ -101,7 +102,7 @@
 		<div class="clear"></div>
 
 	</div>
-
+</div>
 <!-- ENDIF -->
 
 							</div><div class="clearfix"></div>

@@ -29,7 +29,7 @@
 <!-- INCLUDE message.tpl -->        
 
 <!-- IF hide_content != "1" -->
-
+<div class="content-box">
 	<div class="outter page_events">
 
 		<div class="typemedia">
@@ -61,7 +61,7 @@
                                         </div>
 									</div>
 									<div class="clearfix"></div>
-								</div>
+								<!-- </div> -->
                                 
                                 <div class="datainfo" style="padding-top:5px;">
 									<dl class="datainfo">
@@ -86,7 +86,7 @@
 		<div class="clear"></div>
 
 	</div>
-
+</div>
 <!-- ENDIF -->
 
 							</div><div class="clearfix"></div>

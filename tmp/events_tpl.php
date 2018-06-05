@@ -40,7 +40,8 @@ include_once SYS_PATH . "includes/ext/ext.anchor.php";
 					<!-- Blog Post Excerpt -->
 					<div class="col-sm-8">
 						<div class="blog-post blog-single-post page-content">
-							<div class="single-post-title" style="border-bottom: 2px dotted #CCC; margin-bottom:15px;">
+
+							<div class="single-post-title events" style="border-bottom: 2px dotted #CCC; margin-bottom:15px;">
 								<div style="float:left;"><h2><?php echo vldext_lang("events","app_events"); ?></h2></div>
                                 
                                 <div style="float:right; padding-bottom:5px;">
@@ -55,9 +56,9 @@ include_once SYS_PATH . "includes/ext/ext.anchor.php";
                            </div>
 
 			<div style="margin-bottom:15px;">
-				<div style="float:left; padding-right:5px; font-size:16px; font-weight:bold;"><?php echo vldext_anchor(array('url1'=>"events/calendar/",'url2'=>"index.php?m=events&p=calendar",'name'=>"events|frm_events")); ?></div>
+				<div style="float:left; padding-right:5px; font-size:16px; font-weight:bold;"><?php echo vldext_anchor(array('url1'=>"events/",'url2'=>"index.php?m=events&p=calendar",'name'=>"events|frm_events")); ?></div>
 				<div style="float:left; padding-right:5px; font-size:16px; font-weight:bold;"><span>&#187;</span></div>
-				<div style="float:left; padding-right:2px; font-size:16px; font-weight:bold;"><a href="<?php echo isset($_obj['virtual_path']) ? $_obj['virtual_path'] : "&#123;virtual_path&#125;"; ?><?php echo isset($_obj['events_link']) ? $_obj['events_link'] : "&#123;events_link&#125;"; ?>"><?php echo isset($_obj['events_date']) ? $_obj['events_date'] : "&#123;events_date&#125;"; ?></a></div>
+				<div style="float:left; padding-right:2px; font-size:16px; font-weight:bold;"><span><?php echo isset($_obj['events_date']) ? $_obj['events_date'] : "&#123;events_date&#125;"; ?></span></div>
 				<div style="float:right; padding-right:2px; font-size:16px; font-weight:bold;"><a href="<?php echo isset($_obj['virtual_path']) ? $_obj['virtual_path'] : "&#123;virtual_path&#125;"; ?><?php echo vldext_ifelse($PREFS->conf['fancy_urls'],"1","events/rss/","index.php?m=events&p=rss"); ?>" target="_blank"><img src="<?php echo isset($_obj['virtual_tpl_path']) ? $_obj['virtual_tpl_path'] : "&#123;virtual_tpl_path&#125;"; ?><?php echo isset($SESSION->conf['template']) ? $SESSION->conf['template'] : "&#123;template&#125;"; ?>/media/rss.png" border="0" /></a></div>
                 <div class="clearfix"></div>
 			</div>

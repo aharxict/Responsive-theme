@@ -27,7 +27,7 @@
         
 
 <!-- IF hide_content != "1" -->
-
+<div class="content-box">
 	<div class="outter page_default">
 
 		<div class="typepage">
@@ -81,7 +81,7 @@
 		<div class="clear"></div>
 
 	</div>
-
+</div>
 <!-- ENDIF -->
 
 							</div><div class="clearfix"></div>
