@@ -18,7 +18,10 @@
 	                           
                             <!-- IF session.picture AND session.picture_active -->
     						<a href="{top.virtual_path}{session.username}"><img src="{top.virtual_pic_path}{session.media_path}{session.picture}" alt="" border="0" /></a>
-							<!-- ENDIF -->
+							<!-- ELSE -->
+							<a href="{top.virtual_path}{member_profile_link}"><img src="{top.virtual_tpl_path}{session.template}/media/user_picture_none.gif" alt="" border="0" style="border-radius: 2px 2px 0px 0px; width:100% !important;" />
+
+								<!-- ENDIF -->
 							
 						</div>
                         </div>
@@ -41,7 +44,7 @@
                            </div>
                         <!-- INCLUDE message.tpl -->   
         
-
+<div class="content-box">
 <div class="outter page_account_upgrade_payment">
 
 		<div class="typepage">
@@ -79,8 +82,8 @@
 									<div class="fieldset">
 										<dl class="fieldset">
 											<dt><label for="field_username" style="font-weight:normal">{lang:"upgrade","gift_purchase_info"}</label></dt>
-											<dd><input type="text" class="text" id="field_username" name="username" value="{post.username}" maxlength="32" size="32" style="width: 200px" /></dd>
-    										<dd class="submit"><input class="submit" type="submit" name="submit" value="{lang:"upgrade","submit"}" /></dd>
+											<dd style="float: left;"><input type="text" class="text form-control" id="field_username" name="username" value="{post.username}" maxlength="32" size="32" style="width: 200px" /></dd>
+    										<dd class="submit btn-box"><input class="submit btn" type="submit" name="submit" value="{lang:"upgrade","submit"}" /></dd>
 										</dl>
 									</div>
 								</div>
@@ -123,7 +126,7 @@
 		<!-- ENDIF -->
 
 	</div>
-                           
+</div>
                            
                            	</div>
 							

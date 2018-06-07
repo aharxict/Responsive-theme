@@ -400,6 +400,12 @@ header.navbar-inverse .navbar-nav>li>a:hover {
     font-family: 'Poppins', sans-serif;
 
 }
+.loggedin .home_members h2 em {
+    text-shadow: 0.07em 0.07em 0 rgba(255, 255, 255, 0.5);
+}
+.loggedin .news-section {
+    margin-top: 185px;
+}
 .home_members .vt_prof_actions {
     display: none;
     /*display: flex;*/
@@ -840,22 +846,83 @@ div.footer p {
 .navbar-inverse .navbar-nav > li > a:focus {
     color: #000;
 }
+.page_account_login .submit.btn {
+    color: #fff;
+    background: linear-gradient(90deg, #d7df39, #2fc091);
+    font-weight: 700;
+    border-radius: 22px;
+    transition: 0.3s;
+    border: 0px solid transparent;
+    width: auto;
+    padding: 10px;
+    min-width: 150px;
+}
+.page_account_login .submit.btn:hover {
+    background: #e62143;
+    border: 0px solid transparent;
+}
+.page_account_login .itemfooter span a {
+    color: #fff;
+    background: linear-gradient(90deg, #d7df39, #2fc091);
+    font-weight: 700;
+    border-radius: 22px;
+    transition: 0.3s;
+    border: 0px solid transparent;
+    width: auto;
+    padding: 10px;
+    min-width: 150px;
+}
+.page_account_login .itemfooter span a:hover {
+    background: #e62143;
+    border: 0px solid transparent;
+}
+.page_account_login .itemfooter {
+    position: absolute;
+    bottom: 14px;
+    right: 0;
+}
+
+.footer-copyright a:hover {
+    color: #2fc091 !important;
+}
+.register-form legend {
+    font-weight: 900;
+    padding-left: 25px;
+}
+.register-form .form-control.text.captcha {
+    width: 50%;
+    float: left;
+    margin-right: 15px;
+}
+.loggedin .stage.stage-white {
+    position: relative;
+    z-index: 1;
+    margin-top: -500px;
+}
+
 /*event style*/
 .calendar-block{
     margin-top: 15px;
 }
 .calendar-block table {
     width: 100%;
-    border-collapse: collapse;
+    /*border-collapse: collapse;*/
+
+    border-collapse: separate;
+    background-image: linear-gradient(90deg, #d7df39, #2fc091);
+    background-origin: border-box;
+    border-spacing: 5px;
+    border: 0px solid transparent;
 }
 .calendar-block table td {
     width: calc(100% / 7);
     text-align: center;
+    background: white;
 }
 .calendar-block table,
 .calendar-block td,
 .calendar-block th {
-    border: 2px solid #3abeb1;
+    /*border: 2px solid #3abeb1;*/
 }
 .calendar-block table .weekdays td {
     font-weight: 600;
@@ -915,6 +982,9 @@ div.footer p {
 #user-menu.navbar-usermenu,
 #user-menu .navbar-usermenu {
     max-height: unset;
+}
+#user-menu .navbar-brand2 {
+    display: none;
 }
 #user-menu .navbar-brand2,
 .navbar-default .navbar-nav > li > a {
@@ -1210,6 +1280,17 @@ dd {
 .page_search .form {
     padding: 10px;
 }
+
+.page_events_comments_submit .form-control,
+.page_member_guestbook .form-control,
+.page_member_blogs_comments_submit .form-control,
+.page_account_video_edit .form-control,
+.page_account_privacy .form-control,
+.page_account_upgrade_payment .form-control,
+.page_account_lostpass .form-control,
+.login-sidebar .form-control,
+.register-form .form-control,
+.page_account_login .form-control,
 #field_filters .form-control,
 .page_contactus .form-control,
 .page_account_settings .form-control,
@@ -1380,7 +1461,11 @@ label.checkbox input.checkbox {
     border: 1px #eee solid;
     padding: 20px 13px 13px 13px;
 }
-
+.content-box-message {
+    margin: 15px 15px !important;
+    border: 0px #eee solid;
+    padding: 20px 23px 13px 23px;
+}
 .radio, .checkbox {
     min-height: 15px;
     min-width: 15px;
@@ -1480,6 +1565,14 @@ ul.actions li a {
 }
 .page_member_gifts .dataitem {
     margin: 20px 0;
+}
+.page_account_upgrade_payment .submit.btn {
+    margin: 0px 15px 10px 20px;
+}
+
+.page_account_privacy .checkbox.form-control {
+    box-shadow: unset !important;
+    outline: unset !important;
 }
 /* end account home style*/
 

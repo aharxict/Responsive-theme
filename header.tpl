@@ -116,7 +116,7 @@ height: 100%;
 	<link rel="stylesheet" href="{virtual_tpl_path}{session.template}/css/style.css">
 
 </head>
-<body style="height: 100%;" <!-- IF loggedin AND settings.enable_chat AND session.can_chat -->onload="initChat({settings.chat_check_sec},'{session.username}',{session.sound_notify});"<!-- ENDIF -->>
+<body <!-- IF loggedin == "1" --> class="loggedin" <!-- ENDIF --> style="height: 100%;" <!-- IF loggedin AND settings.enable_chat AND session.can_chat -->onload="initChat({settings.chat_check_sec},'{session.username}',{session.sound_notify});"<!-- ENDIF -->>
 <div class="pagewrapper" style="min-height: 100%; height: auto !important; height: 100%; margin: 0 auto;
 <!-- IF loggedin == "0" -->
 padding-top: 60px;

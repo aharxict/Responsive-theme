@@ -54,8 +54,8 @@
 					</form>
 				</div>
 			<div class="itemfooter" style="padding-top:10px;">
-			<span class="glyphicon glyphicon-lock" style="padding-right:8px;"></span><span style="padding-right:10px;">{anchor:url1="account/lostpass/",url2="index.php?m=account_lostpass",name="login|forgot_password"}</span>
-            <span class="glyphicon glyphicon-lock" style="padding-right:8px;"></span>{anchor:url1="account/sendhash/",url2="index.php?m=account_sendhash",name="login|resend_activation_email"}
+			<span style="padding-right:8px;">{anchor:url1="account/lostpass/",url2="index.php?m=account_lostpass",name="login|forgot_password"}</span>
+            <span style="padding-right:8px;">{anchor:url1="account/sendhash/",url2="index.php?m=account_sendhash",name="login|resend_activation_email"}</span>
                     <div class="clear"></div>
 				</div>
 			</div>

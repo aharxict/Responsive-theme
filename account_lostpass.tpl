@@ -24,7 +24,7 @@
 <!-- INCLUDE message.tpl -->
 
 <!-- IF hide_content != "1" -->
-
+<div class="content-box">
 	<div class="outter page_account_lostpass">
 
 		<div class="typepage">
@@ -49,7 +49,7 @@
 		<div class="clear"></div>
 
 	</div>
-
+</div>
 <!-- ENDIF -->
 </div>
 

@@ -70,7 +70,7 @@
 							<!-- IF type_id == settings.default_profile_type -->
 								<script type="text/javascript" language="javascript">var active_tab = 'type_{type_label}_box';</script>
 							<!-- ENDIF -->
-							<div id="type_{type_label}_box"<!-- IF type_id != settings.default_profile_type --> style="display:none"<!-- ENDIF -->>
+							<div id="type_{type_label}_box"<!-- IF type_id != settings.default_profile_type --> style="display:none;"<!-- ENDIF -->>
 
 								<!-- BEGIN profile_groups -->
 
@@ -82,7 +82,7 @@
 
 												<!-- BEGIN profile_fields -->
 
-													<dt style="display:none;"><label for="field_{field_label}">{field_name}</label></dt>
+													<dt style="display:block;"><label for="field_{field_label}">{field_name}</label></dt>
 													<dd style="padding-bottom:5px;">
 														<!-- IF field_type = "text" -->
 															<!-- IF field_label = "uszip" -->
@@ -245,7 +245,7 @@
 							<!-- IF type_id == settings.default_profile_type -->
 								<script type="text/javascript" language="javascript">var active_tab = 'type_{type_label}_box';</script>
 							<!-- ENDIF -->
-							<div id="type_{type_label}_box"<!-- IF type_id != settings.default_profile_type --> style="display:none"<!-- ENDIF -->>
+							<div id="type_{type_label}_box"<!-- IF type_id != settings.default_profile_type --> style="display:none;"<!-- ENDIF -->>
 
 								<!-- BEGIN profile_groups -->
 

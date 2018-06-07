@@ -24,8 +24,8 @@
 <!-- INCLUDE message.tpl -->
 
 <!-- IF hide_content != "1" -->
-
-<form class="form-horizontal" name="register" method="post" action="" enctype="multipart/form-data" style="padding-left:5px;">
+<div class="content-box">
+<form class="form-horizontal register-form" name="register" method="post" action="" enctype="multipart/form-data" style="padding-left:5px;">
   <fieldset>
     <legend style="font-size:16px; padding-bottom:5px; margin-left:-5px; color: #535B60;">Login information</legend>
     
@@ -202,7 +202,7 @@
     </div>
     <!-- ENDIF --> 
     <div class="form-group">
-      <div class="col-lg-10 col-lg-offset-2" style="padding-left:0px; margin-left:15px;">
+      <div class="col-lg-10 col-lg-offset-2 btn-box" style="padding-left:0px; margin-left:15px;">
         <button type="reset" class="btn btn-default">Cancel</button>
         <button type="submit" class="btn btn-primary">Register</button>
       </div>
@@ -210,7 +210,7 @@
   </fieldset>
 <input type="hidden" name="isregister" value="1" />
 </form>
-
+</div>
                         <!-- b f -->
                                   <form name="register" method="post" id="regwrapper" class="form-horizontal clearfix" action="{virtual_path}account/register" onsubmit="return validateRequired() " enctype="multipart/form-data">
 

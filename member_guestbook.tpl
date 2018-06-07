@@ -46,7 +46,7 @@
                                 
                                 <div style="float:right; padding-bottom:5px;">
                                 <!-- INCLUDE member_sections_links.tpl -->
-                           
+
                                 </div>
                                 <div class="clearfix"></div>
                            </div>
@@ -116,7 +116,7 @@ div.reportbox div.popup {
 									<!-- IF settings.guestbooks_captcha -->
     									<dt><label for="field_captcha">{lang:"member","verify_number"}</label></dt>
     									<dd>
-											<input type="text" id="field_captcha" class="text captcha form-control" name="captcha" maxlength="5" style="float:left; width:auto;" />
+											<input type="text" id="field_captcha" class="text captcha form-control" name="captcha" maxlength="5" style="float:left; width:auto; margin-right: 15px;" />
 											<img src="{virtual_path}includes/fns/fns.captcha.php" alt="" border="0" class="captcha" style="float:left;" /><div class="clearfix"></div>
 										</dd>
 									<!-- ENDIF -->

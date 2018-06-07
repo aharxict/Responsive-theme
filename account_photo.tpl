@@ -18,8 +18,12 @@
 	                           
                             <!-- IF session.picture AND session.picture_active -->
     						<a href="{top.virtual_path}{session.username}"><img src="{top.virtual_pic_path}{session.media_path}{session.picture}" alt="" border="0" /></a>
+							<!-- ELSE -->
+							<a href="{top.virtual_path}{member_profile_link}"><img src="{top.virtual_tpl_path}{session.template}/media/user_picture_none.gif" alt="" border="0" style="border-radius: 2px 2px 0px 0px; width:100% !important;" />
+
 							<!-- ENDIF -->
-							
+
+
 						</div>
                         </div>
 <div class="hide-mobile">
@@ -65,10 +69,10 @@
 							</div>
                             <div class="clearfix"></div>
                         <!-- IF photo_filename -->
-						<div class="actions hide-mobile" style="border:#eee 1px solid; border-radius:3px; margin-top:7px; padding:7px; font-size:12px; width:212px;">
+							<!-- 	<div class="actions hide-mobile" style="border:#eee 1px solid; border-radius:3px; margin-top:7px; padding:7px; font-size:12px; width:212px;">
 						<a style="display:none; padding-right:7px;" href="{top.virtual_path}{member_thumbnail_link}" title="{lang:"photo","edit_thumbnail"}"><i class="glyphicon glyphicon-edit"></i> {lang:"photo","edit_thumbnail"}</a>
                         <a href="#" onclick="javascript:confirmLink('{lang:"photo","delete?"}', '{top.virtual_path}{delete_link}')" title="{lang:"photo","delete"}"><i class="glyphicon glyphicon-remove"></i> {lang:"photo","delete"}</a>
-						</div>
+						</div> -->
 						<!-- ENDIF -->
 						</td>
 		                <td class="data">
@@ -80,14 +84,20 @@
 											<dd><input style="height:auto;" id="field_photo" type="file" name="photo" value="" class="text form-control" /></dd>
 											<!-- IF settings.adult_images -->
 												<dt>
-													<label for="field_adult">
+													<label class="checkbox" for="field_adult">
 														<input type="checkbox" class="checkbox" name="adult" value="1" id="field_adult" <!-- IF photo_adult -->checked="checked"<!-- ENDIF --> />
-														{lang:"photo","is_adult"}
+														<div class="checkbox__text">{lang:"photo","is_adult"}</div>
 													</label>
 												</dt>
 											<!-- ENDIF -->
-    										<dd class="submit btn-box">
-    											<input class="submit btn" type="submit" name="submit" value="{lang:"photo","submit"}" />
+    										<dd class="submit btn-box" style="margin-top: 25px;">
+    											<input class="submit btn" style="float: left;" type="submit" name="submit" value="{lang:"photo","submit"}" />
+												<!-- IF photo_filename -->
+												<div class="actions hide-mobile" style="border-radius:3px; font-size:12px; width:auto;">
+													<a style="display:none; padding-right:7px;" class="btn" href="{top.virtual_path}{member_thumbnail_link}" title="{lang:"photo","edit_thumbnail"}"><i class="glyphicon glyphicon-edit"></i> {lang:"photo","edit_thumbnail"}</a>
+													<a href="#" class="btn" onclick="javascript:confirmLink('{lang:"photo","delete?"}', '{top.virtual_path}{delete_link}')" title="{lang:"photo","delete"}"><i class="glyphicon glyphicon-remove"></i> {lang:"photo","delete"}</a>
+												</div>
+												<!-- ENDIF -->
     										</dd>
 										</dl>
 									</div>

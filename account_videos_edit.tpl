@@ -99,7 +99,7 @@
 													<param name="showcontrols" value="1">
 													<param name="width" value="400">
 													<param name="height" value="370">
-													<embed type="application/x-mplayer2" pluginspage="http://www.microsoft.com/windows/mediaplayer/" src="{top.virtual_pic_path}{session.media_path}{video_filename}" align="middle" showstatusbar="1" animationatstart="1" showcontrols="1" autostart="1" transparentatstart="1" width="400" height="370"></embed>
+													<embed type="application/x-mplayer2" pluginspage="https://www.microsoft.com/windows/mediaplayer/" src="{top.virtual_pic_path}{session.media_path}{video_filename}" align="middle" showstatusbar="1" animationatstart="1" showcontrols="1" autostart="1" transparentatstart="1" width="400" height="370"></embed>
 												</object>
 											<!-- ENDIF -->
 										<!-- ENDIF -->
@@ -139,32 +139,32 @@
 											<!-- ENDIF -->
 											<!-- IF settings.enable_video_rating -->
 												<dt>
-													<label for="field_rated">
-														<div style="float:left; padding-right:4px;"><input type="checkbox" class="checkbox" name="rated" value="1" id="field_rated" <!-- IF video_rated -->checked="checked"<!-- ENDIF --> /></div>
-														<div style="float:left; line-height:26px;">{lang:"videos","is_rated"}</div>
+													<label class="checkbox" for="field_rated">
+														<input style="float:left; padding-right:4px;" type="checkbox" class="checkbox" name="rated" value="1" id="field_rated" <!-- IF video_rated -->checked="checked"<!-- ENDIF --> />
+														<div class="checkbox__text" style="float:left; line-height:26px;">{lang:"videos","is_rated"}</div>
                                                         <div class="clearfix"></div>
 													</label>
 												</dt>
 											<!-- ENDIF -->
 											<!-- IF settings.adult_videos -->
 												<dt>
-													<label for="field_adult">
-														<div style="float:left; padding-right:4px;"><input type="checkbox" class="checkbox" name="adult" value="1" id="field_adult" <!-- IF video_adult -->checked="checked"<!-- ENDIF --> /></div>
-														<div style="float:left; line-height:26px;">{lang:"videos","is_adult"}</div>
+													<label class="checkbox" for="field_adult">
+														<input style="float:left; padding-right:4px;" type="checkbox" class="checkbox" name="adult" value="1" id="field_adult" <!-- IF video_adult -->checked="checked"<!-- ENDIF --> />
+														<div class="checkbox__text" style="float:left; line-height:26px;">{lang:"videos","is_adult"}</div>
                                                         <div class="clearfix"></div>
 													</label>
 												</dt>
 											<!-- ENDIF -->
 											<!-- IF settings.enable_video_comments -->
 												<dt>
-													<label for="field_comments">
-														<div style="float:left; padding-right:4px;"><input type="checkbox" class="checkbox" name="comments" value="1" id="field_comments" <!-- IF video_comments -->checked="checked"<!-- ENDIF --> /></div>
-														<div style="float:left; line-height:26px;">{lang:"videos","allow_comments"}</div>
+													<label class="checkbox" for="field_comments">
+														<input style="float:left; padding-right:4px;" type="checkbox" class="checkbox" name="comments" value="1" id="field_comments" <!-- IF video_comments -->checked="checked"<!-- ENDIF --> />
+														<div class="checkbox__text" style="float:left; line-height:26px;">{lang:"videos","allow_comments"}</div>
                                                         <div class="clearfix"></div>
 													</label>
 												</dt>
 											<!-- ENDIF -->
-											<dd class="submit">
+											<dd class="submit btn-box">
 												<input class="submit btn" type="submit" name="submit_regular" value="{lang:"videos","submit"}" id="regular_file_submit" onclick="doUploadFile();return false;" />
 												<input class="submit btn" type="button" name="submit_pending" value="{lang:"videos","submit"}" id="pending_file_submit" style="display:none" onclick="doUploadFile();return false;" />
 											</dd>

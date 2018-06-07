@@ -54,7 +54,7 @@
 
 
 <!-- IF hide_content != "1" -->
-
+<div class="content-box">
 	<div class="outter page_account_privacy">
 
 		<form name="edit" method="post" action="">
@@ -71,16 +71,16 @@
 										<dd><select class="select form-control" name="{setting_label}" id="field_{setting_label}">{dropdownlist:top.accesstypeprofile,setting_value}</select></dd>
 									<!-- ELSEIF setting_label == "access_guestbook_moderate" -->
 										<dt>
-											<label for="field_{setting_label}">
+											<label class="checkbox" for="field_{setting_label}">
 												<input type="checkbox" class="checkbox form-control" name="{setting_label}" value="1" id="field_{setting_label}" <!-- IF setting_value -->checked="checked"<!-- ENDIF --> />
-												{setting_name}
+												<div class="checkbox__text">{setting_name}</div>
 											</label>
 										</dt>
 									<!-- ELSE -->
 										<dd><select class="select form-control" name="{setting_label}" id="field_{setting_label}">{dropdownlist:top.accesstypebox,setting_value}</select></dd>
 									<!-- ENDIF -->
 								<!-- END settings -->
-    							<dd class="submit"><input class="submit btn" type="submit" name="submit" value="{lang:"privacy","submit"}" /></dd>
+    							<dd class="submit btn-box"><input class="submit btn" type="submit" name="submit" value="{lang:"privacy","submit"}" /></dd>
 							</dl>
 						</div>
 					</div>
@@ -91,7 +91,7 @@
 		</form>
 
 	</div>
-
+</div>
 <!-- ENDIF -->
                            
                            

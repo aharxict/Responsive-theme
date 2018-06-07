@@ -54,7 +54,7 @@
 <!-- INCLUDE message.tpl -->
 
 <!-- IF hide_content != "1" -->
-
+<div class="content-box">
 	<div class="outter page_member_pictures_view">
 		<div class="typepage">
 
@@ -81,9 +81,9 @@
 									<dl class="fieldset">
 										<dt>{lang:"member","adult_notice"}</dt>
 										<dt><label><input class="checkbox" name="adult_remember" type="checkbox" value="1">&nbsp;{lang:"member","adult_remember_yes"}</label></dt>
-										<dd class="submit">
-											<input class="submit" name="adult_on" value="{lang:"member","adult_warning_yes"}" type="submit" />
-											<input class="submit" name="adult_off" value="{lang:"member","adult_warning_no"}" onclick="javascript:history.go(-1)" type="button" />
+										<dd class="submit btn-box">
+											<input class="submit btn" name="adult_on" value="{lang:"member","adult_warning_yes"}" type="submit" />
+											<input class="submit btn" name="adult_off" value="{lang:"member","adult_warning_no"}" onclick="javascript:history.go(-1)" type="button" />
 										</dd>
 									</dl>
 								</div>
@@ -167,7 +167,7 @@ div.ratingbox div.selection a {
 														<img src="{virtual_path}includes/fns/fns.captcha.php" alt="" border="0" class="captcha" /><div class="clear"></div>
 													</dd>
 												<!-- ENDIF -->
-    											<dd class="submit"><input class="submit" type="submit" name="submit" value="{lang:"member","submit"}" /></dd>
+    											<dd class="submit btn-box"><input class="submit btn" type="submit" name="submit" value="{lang:"member","submit"}" /></dd>
 											</dl>
 										</div>
 										<input type="hidden" name="iscomment" value="1" />
@@ -202,7 +202,7 @@ div.ratingbox div.selection a {
 		</div>
 		<div class="clear"></div>
 	</div>
-
+</div>
 <!-- ENDIF -->
 
                             

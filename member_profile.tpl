@@ -92,8 +92,8 @@
 								<div style="float:left;"><h2>{member_username}'s {lang:"member","frm_profile"}</h2></div>
                                 
                                 <div style="float:right;">
-                                <div class="nav nav-tabs" role="tablist">
-                                <a href="#profile" aria-controls="profile" role="tab" class="btn" data-toggle="tab"><i class="glyphicon glyphicon-user"></i> <span style="text-transform:uppercase;">{lang:"member","frm_profile"}</span></a>
+                                <div class="nav nav-tabs profile-tabs" role="tablist">
+                                <a href="#profile" aria-controls="profile" role="tab" class="btn active" data-toggle="tab"><i class="glyphicon glyphicon-user"></i> <span style="text-transform:uppercase;">{lang:"member","frm_profile"}</span></a>
                                 <a href="#pictures" aria-controls="pictures" role="tab" class="btn" data-toggle="tab"><i class="glyphicon glyphicon-picture"></i> <span style="text-transform:uppercase;">{lang:"member","frm_pictures"}</span></a>
                                 
                                 <!-- IF settings.enable_guestbooks -->
